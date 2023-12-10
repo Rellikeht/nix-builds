@@ -1,0 +1,14 @@
+result
+*.swp
+*~
+*.lock
+
+#*
+#!*.nix
+#!flake.lock
+
+#!README*
+#!LICENSE*
+#!TODO*
+
+#!./*
