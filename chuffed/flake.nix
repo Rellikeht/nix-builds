@@ -15,8 +15,13 @@
     nixpkgs,
     flakeUtils,
     chuffed,
-  }:
-    flakeUtils.lib.eachSystem ["x86_64-linux"] (system: let
+  }: let
+    systems = [
+      "x86_64-linux"
+      "aarch64-linux"
+    ];
+  in
+    flakeUtils.lib.eachSystem systems (system: let
       pkgs = nixpkgs.legacyPackages.${system};
       name = "chuffed";
       src = chuffed;

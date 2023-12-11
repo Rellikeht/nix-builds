@@ -1,5 +1,5 @@
 {
-  description = "Simple flake for building chuffed";
+  description = "Simple flake for building libminizinc";
 
   inputs = {
     nixpkgs.url = github:NixOS/nixpkgs;
@@ -9,7 +9,6 @@
       flake = false;
     };
 
-    # TODO
     chuffed.url = "../chuffed";
   };
 
@@ -31,20 +30,20 @@
 
           CMAKE_MAKE_PROGRAM = "make -j $NIX_BUILD_CORES";
 
-          # TODO compile with gecode
-          # Fucking cmake says no, so this doesn't work
-          GECODE_ROOT = "${pkgs.gecode}/include";
-
           buildInputs = with pkgs;
             [
               gecode
               cbc
               mpfr
               zlib
+              or-tools
             ]
-            ++ [chuffed.packages.${system}.default];
+            ++ [
+              chuffed.packages.${system}.default
+            ];
 
           nativeBuildInputs = with pkgs; [
+            or-tools
             gecode
             cmake
             bison
@@ -52,12 +51,21 @@
             jq
           ];
 
-          # Fuck cmake more
-          #          buildPhase = "
-          #            mkdir build
-          #            cd build
-          #            cmake .. -DGECODE_ROOT=$GECODE_ROOT
-          #            ";
+          cmakeFlags = [
+            "-DGecode_ROOT=${pkgs.gecode}/include"
+            "-DGECODE_ROOT=${pkgs.gecode}/include"
+          ];
+
+          # From nixpkgs, looks like sad workaround :(
+          #          postInstall = with pkgs; ''
+          #            mkdir -p $out/share/minizinc/solvers/
+          #            jq \
+          #              '.version = "${gecode.version}"
+          #             | .mznlib = "${gecode}/share/gecode/mznlib"
+          #             | .executable = "${gecode}/bin/fzn-gecode"' \
+          #             ${./gecode.msc} \
+          #             >$out/share/minizinc/solvers/gecode.msc
+          #          '';
 
           meta = with nixpkgs.lib; {
             homepage = "https://www.minizinc.org/";
