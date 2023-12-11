@@ -51,21 +51,32 @@
             jq
           ];
 
-          cmakeFlags = [
-            "-DGecode_ROOT=${pkgs.gecode}/include"
-            "-DGECODE_ROOT=${pkgs.gecode}/include"
-          ];
+          # cmakeFlags = [
+          #   "-DGecode_ROOT=${pkgs.gecode}/include"
+          #   "-dGECODE_ROOT=${pkgs.gecode}/include"
+          # ];
 
-          # From nixpkgs, looks like sad workaround :(
-          #          postInstall = with pkgs; ''
-          #            mkdir -p $out/share/minizinc/solvers/
-          #            jq \
-          #              '.version = "${gecode.version}"
-          #             | .mznlib = "${gecode}/share/gecode/mznlib"
-          #             | .executable = "${gecode}/bin/fzn-gecode"' \
-          #             ${./gecode.msc} \
-          #             >$out/share/minizinc/solvers/gecode.msc
-          #          '';
+          # Sad workaround from nixpkgs, maybe this is
+          # necessary to make shit work :(
+
+          postInstall = with pkgs; ''
+            mkdir -p $out/share/minizinc/solvers/
+
+            jq \
+              '.version = "${gecode.version}"
+             | .mznlib = "${gecode}/share/gecode/mznlib"
+             | .executable = "${gecode}/bin/fzn-gecode"' \
+             ${./gecode.msc} \
+             >$out/share/minizinc/solvers/gecode.msc
+
+            jq \
+              '.version = "${or-tools.version}"
+             # | .mznlib = "${or-tools}/share/minizinc/ortools"
+             | .executable = "${or-tools}/bin/fzn-ortools"' \
+             ${./ortools.msc} \
+             >$out/share/minizinc/solvers/ortools.msc
+
+          '';
 
           meta = with nixpkgs.lib; {
             homepage = "https://www.minizinc.org/";
