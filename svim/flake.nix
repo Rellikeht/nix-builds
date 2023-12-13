@@ -4,8 +4,8 @@
   inputs = {
     nixpkgs.url = github:NixOS/nixpkgs;
     flakeUtils.url = github:numtide/flake-utils;
-    package = {
-      url = github:chuffed/chuffed;
+    chuffed = {
+      url = github:Rellikeht/svim-comptools;
       flake = false;
     };
   };
@@ -14,7 +14,7 @@
     self,
     nixpkgs,
     flakeUtils,
-    package,
+    chuffed,
   }: let
     systems = [
       "x86_64-linux"
@@ -24,7 +24,7 @@
     flakeUtils.lib.eachSystem systems (system: let
       pkgs = nixpkgs.legacyPackages.${system};
       name = "chuffed";
-      src = package;
+      src = chuffed;
     in {
       packages = {
         default = pkgs.stdenv.mkDerivation {
