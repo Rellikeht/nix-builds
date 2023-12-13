@@ -1,7 +1,13 @@
-result
+# Probably temporary solution
+#result
+*
+!*.*
+
 *.swp
 *~
 *.lock
+*.tar*
+*.zip
 
 #*
 #!*.nix

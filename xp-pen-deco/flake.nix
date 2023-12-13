@@ -27,6 +27,7 @@
       name = "xp-pen-deco-01-v2-driver";
       src = package;
       dataDir = "var/lib/xppend1v2";
+      exec = "PenTablet";
     in {
       packages = {
         default = pkgs.stdenv.mkDerivation {
@@ -58,25 +59,28 @@
           unpackPhase = "
             tar xzf ${src}
             mv XPPenLinux*/* .
+            rm -r XPPen*
           ";
 
           installPhase = ''
-                        runHook preInstall
+            runHook preInstall
 
-                        mkdir -p $out/{opt,bin}
-                        ls -R >> $out/f.txt
+            mkdir -p $out/{opt,bin}
 
-                        cp -r App/usr/lib/pentablet/{resource.rcc,conf} $out/opt
-                        cp App/usr/lib/pentablet/PenTablet $out/opt/pentablet
-                        chmod +x $out/opt/pentablet
-                        cp -r App/lib $out/lib
-            #sed -i 's#usr/lib/pentablet#${dataDir}#g' $out/opt/pentablet
+            cp -r App/usr/ $out/
+            cp -r App/lib/ $out/
 
-                        runHook postInstall
+            runHook postInstall
           '';
 
+          #            cp -r App/usr/lib/pentablet/{${exec},resource.rcc,conf} $out/opt
+          #            chmod +x $out/opt/${exec}
+          #            cp -r App/lib $out/lib
+
+          #sed -i 's#usr/lib/pentablet#${dataDir}#g' $out/opt/${exec}
+
           postFixup = ''
-            makeWrapper $out/opt/pentablet $out/bin/xp-pen-deco-01-v2-driver \
+            makeWrapper $out/opt/${exec} $out/bin/xp-pen-deco-01-v2-driver \
               "''${qtWrapperArgs[@]}" \
               --run 'if [ "$EUID" -ne 0 ]; then echo "Please run as root."; exit 1; fi' \
               --run 'if [ ! -d /${dataDir} ]; then mkdir -p /${dataDir}; cp -r '$out'/opt/conf /${dataDir}; chmod u+w -R /${dataDir}; fi'
@@ -87,7 +91,6 @@
             description = "XP Pen Deco 01 V2 driver";
             platforms = ["x86_64-linux"];
             sourceProvenance = with sourceTypes; [binaryNativeCode];
-            maintainers = with maintainers; [virchau13];
             license = licenses.unfree;
           };
         };
