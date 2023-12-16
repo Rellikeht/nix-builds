@@ -2,19 +2,16 @@
 #result
 *
 !*.*
+!*/
 
 *.swp
 *~
 *.lock
 *.tar*
 *.zip
+*.so
 
-#*
-#!*.nix
-#!flake.lock
-
-#!README*
-#!LICENSE*
-#!TODO*
+# Definitely temporary solution
+xp-pen*/XP*
 
 #!./*
