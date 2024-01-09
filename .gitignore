@@ -6,10 +6,12 @@
 
 *.swp
 *~
-*.lock
 *.tar*
 *.zip
 *.so
+
+#*.lock
+#!or-tools/flake.lock
 
 # Definitely temporary solution
 xp-pen*/XP*
