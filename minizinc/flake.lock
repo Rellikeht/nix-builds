@@ -9,11 +9,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-cIKvX1Qmm9HfctNKg0XDjEj5k2YeRkaoNf5+Uy7BxJY=",
-        "path": "/nix/store/z6519vvlisjaghr3xqajwx4jsvnjqpic-source/chuffed",
+        "path": "/nix/store/3kdlls6xh42q7fbf3afi5kmc6fav3r4d-source/chuffed",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/z6519vvlisjaghr3xqajwx4jsvnjqpic-source/chuffed",
+        "path": "/nix/store/3kdlls6xh42q7fbf3afi5kmc6fav3r4d-source/chuffed",
         "type": "path"
       }
     },

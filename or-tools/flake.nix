@@ -9,9 +9,17 @@
       flake = false;
     };
 
-    pybind11_protobuf = {
-      url = "../pybind11_protobuf";
+    protobuf = {
+      url = github:protocolbuffers/protobuf;
+      flake = false;
     };
+
+    pybind11_protobuf = {
+      url = github:pybind/pybind11_protobuf;
+      flake = false;
+      #url = "../pybind11-protobuf";
+    };
+
     #pybind11_protobuf = {
     #  url = github:pybind/pybind11_protobuf;
     #  flake = false;
@@ -22,11 +30,12 @@
     # dependency3.url = "https://git.com/repo";
   };
 
-  outputs = {
+  outputs = inputs @ {
     self,
     nixpkgs,
     flakeUtils,
     package,
+    protobuf,
     pybind11_protobuf,
   }: let
     systems = ["x86_64-linux" "aarch64-linux"];
@@ -40,6 +49,8 @@
       version = "";
       src = package;
       pkgPython = pkgs.python311;
+      # protobufPkg = protobuf.packages.${system}.default;
+      # pybindProtoPkg = pybind11_protobuf.packages.${system}.default;
     in {
       packages = {
         default = pkgs.stdenv.mkDerivation {
@@ -83,20 +94,25 @@
               "-DBUILD_DEPS=OFF"
               "-DBUILD_PYTHON=ON"
               "-DBUILD_pybind11=OFF"
-              #"-DBUILD_pybind11_protobuf=${pybind11_protobuf}"
-              #"-DBUILD_pybind11_protobuf=OFF"
               "-DFETCH_PYTHON_DEPS=OFF"
               "-DUSE_GLPK=ON"
               "-DUSE_SCIP=OFF"
               "-DPython3_EXECUTABLE=${pkgPython.pythonOnBuildForHost.interpreter}"
+              #"-DBUILD_pybind11_protobuf=${pybind11_protobuf}"
+              #"-DBUILD_pybind11_protobuf=OFF"
+              "-Dpybind11_protobuf_DIR=${pybind11_protobuf}"
             ]
             ++ lib.optionals stdenv.isDarwin ["-DCMAKE_MACOSX_RPATH=OFF"];
 
           propagatedBuildInputs = with pkgs; [
             abseil-cpp
-            protobuf
-            (pkgPython.pkgs.protobuf.override {protobuf = protobuf;})
+            (pkgPython.pkgs.protobuf.override {protobuf = inputs.protobuf;})
+            #(pkgPython.pkgs.protobuf.override {protobuf = protobufPkg;})
             pkgPython.pkgs.numpy
+
+            #inputs.protobuf
+            #protobufPkg
+            #protobuf
           ];
 
           nativeCheckInputs = with pkgs; [
@@ -105,24 +121,18 @@
             pkgPython.pkgs.virtualenv
           ];
 
-          buildInputs = with pkgs;
-            [
-              bzip2
-              cbc
-              eigen
-              glpk
-              pkgPython.pkgs.absl-py
-              pkgPython.pkgs.pybind11
-              pkgPython.pkgs.setuptools
-              pkgPython.pkgs.wheel
-              re2
-              zlib
-            ]
-            ++ [
-              # dependency1.${system}.default
-              # dependency2.${system}.default
-              # dependency3.${system}.default
-            ];
+          buildInputs = with pkgs; [
+            bzip2
+            cbc
+            eigen
+            glpk
+            pkgPython.pkgs.absl-py
+            pkgPython.pkgs.pybind11
+            pkgPython.pkgs.setuptools
+            pkgPython.pkgs.wheel
+            re2
+            zlib
+          ];
 
           nativeBuildInputs = with pkgs;
             [
@@ -132,7 +142,10 @@
               pkgPython.pythonOnBuildForHost
               swig4
               unzip
-              pybind11_protobuf
+
+              #pybind11_protobuf
+              #pybindProtoPkg
+              # pybind11_protobuf.packages.${system}.default
             ]
             ++ (with pkgPython.pythonOnBuildForHost.pkgs; [
               pip
