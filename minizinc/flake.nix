@@ -9,7 +9,9 @@
       flake = false;
     };
 
-    chuffed.url = "../chuffed";
+    # chuffed.url = "../chuffed";
+    # chuffed.url = github:Rellikeht/nix-builds/chuffed;
+    deps.url = github:Rellikeht/nix-builds;
   };
 
   outputs = {
@@ -17,19 +19,23 @@
     nixpkgs,
     flakeUtils,
     package,
-    chuffed,
+    deps,
+    # chuffed,
   }:
-    flakeUtils.lib.eachSystem ["x86_64-linux"] (system: let
+    flakeUtils.lib.eachSystem [
+      "x86_64-linux"
+      "aarch64-linux"
+    ] (system: let
       pkgs = nixpkgs.legacyPackages.${system};
       name = "libminizinc";
       src = package;
+      # chuffed = dependencies.packages.${system}.chuffed;
     in {
       packages = {
         default = pkgs.stdenv.mkDerivation {
           inherit name system src;
 
           CMAKE_MAKE_PROGRAM = "make -j $NIX_BUILD_CORES";
-
           buildInputs = with pkgs;
             [
               gecode
@@ -69,12 +75,13 @@
              ${./gecode.msc} \
              >$out/share/minizinc/solvers/gecode.msc
 
-            jq \
-              '.version = "${or-tools.version}"
-             # | .mznlib = "${or-tools}/share/minizinc/ortools"
-             | .executable = "${or-tools}/bin/fzn-ortools"' \
-             ${./ortools.msc} \
-             >$out/share/minizinc/solvers/ortools.msc
+            cp ${or-tools}/share/minizinc/solvers/ortools.msc $out/share/minizinc/solve
+            #jq \
+            #  '.version = "${or-tools.version}"
+            # | .mznlib = "${or-tools}/share/minizinc/ortools"
+            # | .executable = "${or-tools}/bin/fzn-ortools"' \
+            # ${./ortools.msc} \
+            # >$out/share/minizinc/solvers/ortools.msc
 
           '';
 

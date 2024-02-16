@@ -4,7 +4,7 @@
   inputs = {
     flakeUtils.url = github:numtide/flake-utils;
     # minizinc.url = "./minizinc";
-    # chuffed.url = "./chuffed";
+    chuffed.url = "./chuffed";
     breeze-hacked.url = "./breeze-hacked";
   };
 
@@ -13,7 +13,7 @@
     nixpkgs,
     flakeUtils,
     # minizinc,
-    # chuffed,
+    chuffed,
     breeze-hacked,
   }: let
     systems = ["x86_64-linux" "aarch64-linux"];
@@ -21,11 +21,12 @@
     flakeUtils.lib.eachSystem systems (system: let
       pkgs = nixpkgs.legacyPackages.${system};
       lib = pkgs.lib;
+      getDef = pkg: pkg.packages.${system}.default;
     in {
       packages = {
-        # minizinc = minizinc;
-        # chuffed = chuffed;
-        breeze-hacked = breeze-hacked;
+        # minizinc = getDef minizinc;
+        chuffed = getDef chuffed;
+        breeze-hacked = getDef breeze-hacked;
       };
     });
 }
