@@ -71,18 +71,21 @@
           # necessary to make shit work :(
 
           postInstall = with pkgs; ''
-             mkdir -p $out/share/minizinc/solvers/
+            mkdir -p $out/share/minizinc/solvers/
 
-             jq \
-               '.version = "${gecode.version}"
+            jq \
+              '.version = "${gecode.version}"
               | .mznlib = "${gecode}/share/gecode/mznlib"
               | .executable = "${gecode}/bin/fzn-gecode"' \
               ${./gecode.msc} \
               >$out/share/minizinc/solvers/gecode.msc
 
-            cp \
-              ${or-tools}/share/minizinc/solvers/ortools.msc \
-              $out/share/minizinc/solvers
+            jq \
+              '.version = "${or-tools.version}"
+             | .mznlib = "${or-tools}/share/minizinc/ortools"
+             | .executable = "${or-tools}/bin/fzn-ortools"' \
+             ${./ortools.msc} \
+             >$out/share/minizinc/solvers/ortools.msc
 
           '';
 
@@ -94,10 +97,7 @@
       };
     });
 }
-#jq \
-#  '.version = "${or-tools.version}"
-# | .mznlib = "${or-tools}/share/minizinc/ortools"
-# | .executable = "${or-tools}/bin/fzn-ortools"' \
-# ${./ortools.msc} \
-# >$out/share/minizinc/solvers/ortools.msc
+# cp \
+#   ${or-tools}/share/minizinc/solvers/ortools.msc \
+#   $out/share/minizinc/solvers
 

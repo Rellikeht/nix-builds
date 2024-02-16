@@ -8,11 +8,11 @@
       },
       "locked": {
         "dir": "chuffed",
-        "lastModified": 1708117850,
-        "narHash": "sha256-2uhANSC1ANaRbRwKQtudq51jP22HlnDjrEJbAor2TBQ=",
+        "lastModified": 1708121092,
+        "narHash": "sha256-tsrhrCspphAzOfGU4Amu8jmeo9jBJAuUcs8Y3dM2gho=",
         "owner": "Rellikeht",
         "repo": "nix-builds",
-        "rev": "12449af1dc42bbbaff57f774eee13813d5e0a7a2",
+        "rev": "37eb92b988aba1155c35c25224d2699e3e0e7560",
         "type": "github"
       },
       "original": {
@@ -75,11 +75,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1708119904,
-        "narHash": "sha256-56e0wNo3AQMG5BdQ8uMBjn6Do2bJrz5bsjstUyRQi48=",
+        "lastModified": 1708122011,
+        "narHash": "sha256-66/TE51kmsecKIa9MXLe/Bx5RmVjFie/Isl+w3wI01o=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "59a26b220127670ae9d6f418c5a609f943913d7b",
+        "rev": "3378e4ec169425e7434d101f32680c068799a0f4",
         "type": "github"
       },
       "original": {
