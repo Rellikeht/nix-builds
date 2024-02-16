@@ -9,11 +9,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-wdmGHo9oftLcoKK7/tHeJnSg+PszDDzn0X+v/7Xdzfw=",
-        "path": "/nix/store/iv0vmps49sl7xsq1b12cgr72svrqs270-source/breeze-hacked",
+        "path": "/nix/store/2y9ijxl7hjha7a7p7rkcvrlyvrpfwp9g-source/breeze-hacked",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/iv0vmps49sl7xsq1b12cgr72svrqs270-source/breeze-hacked",
+        "path": "/nix/store/2y9ijxl7hjha7a7p7rkcvrlyvrpfwp9g-source/breeze-hacked",
         "type": "path"
       }
     },
@@ -26,11 +26,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-+EBepe/K5WSva8A+FVyFVyUb65yN5fOqAI9QOIa+w7o=",
-        "path": "/nix/store/iv0vmps49sl7xsq1b12cgr72svrqs270-source/chuffed",
+        "path": "/nix/store/2y9ijxl7hjha7a7p7rkcvrlyvrpfwp9g-source/chuffed",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/iv0vmps49sl7xsq1b12cgr72svrqs270-source/chuffed",
+        "path": "/nix/store/2y9ijxl7hjha7a7p7rkcvrlyvrpfwp9g-source/chuffed",
         "type": "path"
       }
     },

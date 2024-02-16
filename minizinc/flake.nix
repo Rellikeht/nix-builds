@@ -10,7 +10,7 @@
     };
 
     # chuffed.url = "../chuffed";
-    # chuffed.url = github:Rellikeht/nix-builds/chuffed;
+    # chuffed.url = "github:Rellikeht/nix-builds#chuffed";
     deps.url = github:Rellikeht/nix-builds;
   };
 
@@ -29,7 +29,10 @@
       pkgs = nixpkgs.legacyPackages.${system};
       name = "libminizinc";
       src = package;
-      # chuffed = dependencies.packages.${system}.chuffed;
+      chuffed =
+        builtins.trace
+        deps.packages.${system}
+        deps.packages.${system}.default;
     in {
       packages = {
         default = pkgs.stdenv.mkDerivation {
@@ -45,7 +48,8 @@
               or-tools
             ]
             ++ [
-              chuffed.packages.${system}.default
+              # chuffed.packages.${system}.default
+              chuffed
             ];
 
           nativeBuildInputs = with pkgs; [
