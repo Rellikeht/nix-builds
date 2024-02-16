@@ -1,0 +1,77 @@
+{
+  "nodes": {
+    "flakeUtils": {
+      "inputs": {
+        "systems": "systems"
+      },
+      "locked": {
+        "lastModified": 1705309234,
+        "narHash": "sha256-uNRRNRKmJyCRC/8y1RqBkqWBLM034y4qN7EprSdmgyA=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "1ef2e671c3b0c19053962c07dbda38332dcebf26",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1708108454,
+        "narHash": "sha256-+4AIcZCdosDTgrj5xqhulgbuuSDm6Ev3pm6dTwHUWBE=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "c267e823b7cf49e3ec88517ffcd108c4c14f0ecd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "package": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1706459405,
+        "narHash": "sha256-gm50qgHdbjDYMz/ksbDD8tMqY9AqJ23DKl4rPFNEDX8=",
+        "owner": "clayrisser",
+        "repo": "breeze-hacked-cursor-theme",
+        "rev": "79dcc8925136ebe12612c6f124036c1aa816ebbe",
+        "type": "github"
+      },
+      "original": {
+        "owner": "clayrisser",
+        "repo": "breeze-hacked-cursor-theme",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeUtils": "flakeUtils",
+        "nixpkgs": "nixpkgs",
+        "package": "package"
+      }
+    },
+    "systems": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
