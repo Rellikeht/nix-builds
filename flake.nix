@@ -3,7 +3,7 @@
 
   inputs = {
     flakeUtils.url = github:numtide/flake-utils;
-    # minizinc.url = "./minizinc";
+    minizinc.url = "./minizinc";
     chuffed.url = "./chuffed";
     breeze-hacked.url = "./breeze-hacked";
   };
@@ -12,7 +12,7 @@
     self,
     nixpkgs,
     flakeUtils,
-    # minizinc,
+    minizinc,
     chuffed,
     breeze-hacked,
   }: let
@@ -24,7 +24,7 @@
       getDef = pkg: pkg.packages.${system}.default;
     in {
       packages = {
-        # minizinc = getDef minizinc;
+        minizinc = getDef minizinc;
         breeze-hacked = getDef breeze-hacked;
         chuffed = getDef chuffed;
       };
