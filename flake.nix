@@ -25,8 +25,8 @@
     in {
       packages = {
         # minizinc = getDef minizinc;
-        chuffed = getDef chuffed;
         breeze-hacked = getDef breeze-hacked;
+        chuffed = getDef chuffed;
       };
     });
 }
