@@ -4,6 +4,7 @@
   inputs = {
     flakeUtils.url = github:numtide/flake-utils;
     minizinc.url = "./minizinc";
+    minizinc-ide-bin.url = "./minizinc-ide-bin";
     chuffed.url = "./chuffed";
     breeze-hacked.url = "./breeze-hacked";
     dwm.url = github:Rellikeht/dwm;
@@ -17,6 +18,7 @@
     nixpkgs,
     flakeUtils,
     minizinc,
+    minizinc-ide-bin,
     chuffed,
     breeze-hacked,
     dwm,
@@ -32,6 +34,7 @@
 
       pkgnames = [
         minizinc
+        minizinc-ide-bin
         chuffed
         breeze-hacked
         dwm
@@ -47,6 +50,7 @@
       # inherit packages;
       packages = {
         minizinc = getDef minizinc;
+        minizinc-ide-bin = getDef minizinc-ide-bin;
         breeze-hacked = getDef breeze-hacked;
         chuffed = getDef chuffed;
         dwm = getDef dwm;

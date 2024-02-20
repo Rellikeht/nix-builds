@@ -11,12 +11,11 @@
 *.so
 
 #*.lock
-#!or-tools/flake.lock
 
 # Definitely temporary solution
 xp-pen*/XP*
 breeze-hacked-cursor-theme/
 !chuffed
-minizinc-bin/MiniZinc*
+minizinc*bin/Mini*
 
 #!./*
