@@ -63,27 +63,24 @@
           ";
 
           installPhase = ''
-            runHook preInstall
-
-            mkdir -p $out/{opt,bin}
-
-            cp -r App/usr/ $out/
-            cp -r App/lib/ $out/
-
-            runHook postInstall
+            mkdir -p $out/bin
+            cp -r App/* $out
+            rm $out/usr/lib/pentablet/PenTablet.sh
+            ln -s ../usr/lib/pentablet/PenTablet $out/bin/pentablet
           '';
 
-          #            cp -r App/usr/lib/pentablet/{${exec},resource.rcc,conf} $out/opt
-          #            chmod +x $out/opt/${exec}
-          #            cp -r App/lib $out/lib
-
-          #sed -i 's#usr/lib/pentablet#${dataDir}#g' $out/opt/${exec}
-
           postFixup = ''
-            makeWrapper $out/opt/${exec} $out/bin/xp-pen-deco-01-v2-driver \
-              "''${qtWrapperArgs[@]}" \
-              --run 'if [ "$EUID" -ne 0 ]; then echo "Please run as root."; exit 1; fi' \
-              --run 'if [ ! -d /${dataDir} ]; then mkdir -p /${dataDir}; cp -r '$out'/opt/conf /${dataDir}; chmod u+w -R /${dataDir}; fi'
+            makeWrapper $out/usr/lib/pentablet/PenTablet \
+            $out/bin/pentablet \
+            "''${qtWrapperArgs[@]}" \
+            --run 'if [ "$EUID" -ne 0 ]; then echo "Please run as root."; exit 1; fi' \
+            --run "
+            if [ ! -d /${dataDir} ]
+            then mkdir -p /${dataDir}
+              cp -r $out/usr/lib/pentablet/conf /${dataDir}
+              chmod u+w -R /${dataDir}
+            fi
+            "
           '';
 
           meta = with nixpkgs.lib; {
@@ -91,7 +88,7 @@
             description = "XP Pen Deco 01 V2 driver";
             platforms = ["x86_64-linux"];
             sourceProvenance = with sourceTypes; [binaryNativeCode];
-            license = licenses.unfree;
+            # license = licenses.unfree;
           };
         };
       };
