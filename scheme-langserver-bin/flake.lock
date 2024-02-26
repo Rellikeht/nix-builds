@@ -36,17 +36,13 @@
     "package": {
       "flake": false,
       "locked": {
-        "lastModified": 1707473179,
-        "narHash": "sha256-Tv/tsO3I2lw7dIwTsdo8KZU8WyoX5aXbhTi+8Cl6EuQ=",
-        "owner": "chuffed",
-        "repo": "chuffed",
-        "rev": "5ecfa5476afd01e2f18fbbbbcc611ce0de7d351f",
-        "type": "github"
+        "narHash": "sha256-+pLRGbOl6dg/4B1/uAeKhjWDfhCJAERjpKrYuhL/cLc=",
+        "type": "file",
+        "url": "https://github.com/ufo5260987423/scheme-langserver/releases/download/1.1.1/run"
       },
       "original": {
-        "owner": "chuffed",
-        "repo": "chuffed",
-        "type": "github"
+        "type": "file",
+        "url": "https://github.com/ufo5260987423/scheme-langserver/releases/download/1.1.1/run"
       }
     },
     "root": {
