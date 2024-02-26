@@ -63,5 +63,10 @@
         tabbed = getDef tabbed;
         dmenu = getDef dmenu;
       };
+
+      utils = {
+        # TODO utilities
+        # HERE jdks, guile
+      };
     });
 }
