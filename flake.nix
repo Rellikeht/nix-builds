@@ -29,8 +29,9 @@
     dmenu,
   }: let
     systems = ["x86_64-linux" "aarch64-linux"];
+    getDefS = system: pkg: pkg.packages.${system}.default;
   in
-    flakeUtils.lib.eachSystem systems (system: let
+    (flakeUtils.lib.eachSystem systems (system: let
       pkgs = nixpkgs.legacyPackages.${system};
       lib = pkgs.lib;
 
@@ -47,26 +48,31 @@
         dmenu
       ];
 
-      getDef = pkg: pkg.packages.${system}.default;
       # TODO make this work
       # packages = builtins.map getDef pkgnames;
+      getDef = getDefS system;
     in {
       # inherit packages;
       packages = {
         chuffed = getDef chuffed;
         minizinc = getDef minizinc;
-        minizinc-ide-bin = getDef minizinc-ide-bin;
         breeze-hacked = getDef breeze-hacked;
-        scheme-langserver-bin = getDef scheme-langserver-bin;
         dwm = getDef dwm;
         st = getDef st;
         tabbed = getDef tabbed;
         dmenu = getDef dmenu;
       };
-
-      utils = {
-        # TODO utilities
-        # HERE jdks, guile
+    }))
+    // (let
+      getDef = getDefS "x86_64-linux";
+    in {
+      packages."x86_64-linux" = {
+        minizinc-ide-bin = getDef minizinc-ide-bin;
+        scheme-langserver-bin = getDef scheme-langserver-bin;
       };
-    });
+    })
+    // {
+      utils = {
+      };
+    };
 }
