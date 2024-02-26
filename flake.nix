@@ -28,10 +28,12 @@
     tabbed,
     dmenu,
   }: let
+    b = builtins;
     systems = ["x86_64-linux" "aarch64-linux"];
+    l64 = "x86_64-linux";
     getDefS = system: pkg: pkg.packages.${system}.default;
-  in
-    (flakeUtils.lib.eachSystem systems (system: let
+
+    packagesMulti = flakeUtils.lib.eachSystem systems (system: let
       pkgs = nixpkgs.legacyPackages.${system};
       lib = pkgs.lib;
 
@@ -62,17 +64,19 @@
         tabbed = getDef tabbed;
         dmenu = getDef dmenu;
       };
-    }))
-    // (let
-      getDef = getDefS "x86_64-linux";
-    in {
-      packages."x86_64-linux" = {
+    });
+
+    packagesL64 =
+      (let
+        getDef = getDefS l64;
+      in {
         minizinc-ide-bin = getDef minizinc-ide-bin;
         scheme-langserver-bin = getDef scheme-langserver-bin;
-      };
-    })
-    // {
-      utils = {
-      };
+      })
+      // packagesMulti.packages.${l64};
+  in {
+    packages = packagesMulti.packages // {${l64} = packagesL64;};
+    utils = {
     };
+  };
 }
