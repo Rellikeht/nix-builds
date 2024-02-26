@@ -7,6 +7,7 @@
     minizinc-ide-bin.url = "./minizinc-ide-bin";
     chuffed.url = "./chuffed";
     breeze-hacked.url = "./breeze-hacked";
+    scheme-langserver-bin.url = "./scheme-langserver-bin";
     dwm.url = github:Rellikeht/dwm;
     st.url = github:Rellikeht/st;
     tabbed.url = github:Rellikeht/tabbed;
@@ -17,10 +18,11 @@
     self,
     nixpkgs,
     flakeUtils,
+    chuffed,
     minizinc,
     minizinc-ide-bin,
-    chuffed,
     breeze-hacked,
+    scheme-langserver-bin,
     dwm,
     st,
     tabbed,
@@ -33,10 +35,12 @@
       lib = pkgs.lib;
 
       pkgnames = [
+        chuffed
         minizinc
         minizinc-ide-bin
-        chuffed
         breeze-hacked
+        scheme-langserver-bin
+
         dwm
         st
         tabbed
@@ -49,10 +53,11 @@
     in {
       # inherit packages;
       packages = {
+        chuffed = getDef chuffed;
         minizinc = getDef minizinc;
         minizinc-ide-bin = getDef minizinc-ide-bin;
         breeze-hacked = getDef breeze-hacked;
-        chuffed = getDef chuffed;
+        scheme-langserver-bin = getDef scheme-langserver-bin;
         dwm = getDef dwm;
         st = getDef st;
         tabbed = getDef tabbed;
