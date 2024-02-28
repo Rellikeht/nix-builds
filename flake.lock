@@ -9,11 +9,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-U3cabyli8MeswHYgLKqvA1qn8WSpXltLjPqQeZAkKG4=",
-        "path": "/nix/store/my2i8rrzacrx906fqbi9ljilpf5l8fav-source/breeze-hacked",
+        "path": "/nix/store/mxxax32fxxqrx7p54qsfcvfhrnvfijgs-source/breeze-hacked",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/my2i8rrzacrx906fqbi9ljilpf5l8fav-source/breeze-hacked",
+        "path": "/nix/store/mxxax32fxxqrx7p54qsfcvfhrnvfijgs-source/breeze-hacked",
         "type": "path"
       }
     },
@@ -26,11 +26,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-6GlUoOidGl2PJQKEzt3IMk0f9VH33BhqWzvvoOvFqmw=",
-        "path": "/nix/store/my2i8rrzacrx906fqbi9ljilpf5l8fav-source/chuffed",
+        "path": "/nix/store/mxxax32fxxqrx7p54qsfcvfhrnvfijgs-source/chuffed",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/my2i8rrzacrx906fqbi9ljilpf5l8fav-source/chuffed",
+        "path": "/nix/store/mxxax32fxxqrx7p54qsfcvfhrnvfijgs-source/chuffed",
         "type": "path"
       }
     },
@@ -264,11 +264,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-DRM7IFE8ckeKnHmFF8w52wKpJ7KITTaBq0qPRy/y5R8=",
-        "path": "/nix/store/my2i8rrzacrx906fqbi9ljilpf5l8fav-source/minizinc",
+        "path": "/nix/store/mxxax32fxxqrx7p54qsfcvfhrnvfijgs-source/minizinc",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/my2i8rrzacrx906fqbi9ljilpf5l8fav-source/minizinc",
+        "path": "/nix/store/mxxax32fxxqrx7p54qsfcvfhrnvfijgs-source/minizinc",
         "type": "path"
       }
     },
@@ -281,11 +281,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-lwYFkTKKPGITUCXKPUzmleBgJYsiyJSsalsRerL8RA8=",
-        "path": "/nix/store/my2i8rrzacrx906fqbi9ljilpf5l8fav-source/minizinc-ide-bin",
+        "path": "/nix/store/mxxax32fxxqrx7p54qsfcvfhrnvfijgs-source/minizinc-ide-bin",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/my2i8rrzacrx906fqbi9ljilpf5l8fav-source/minizinc-ide-bin",
+        "path": "/nix/store/mxxax32fxxqrx7p54qsfcvfhrnvfijgs-source/minizinc-ide-bin",
         "type": "path"
       }
     },
@@ -441,16 +441,17 @@
     },
     "nixpkgs_8": {
       "locked": {
-        "lastModified": 1709069307,
-        "narHash": "sha256-ER6N232jucnqu4+AK80RdmgBDuk61FAqmp36EMqkQns=",
+        "lastModified": 1709121887,
+        "narHash": "sha256-NdrrA9s2RxEcz9wycahTBBvM51JTnHwux3nTIvpIu+8=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "9c1ea5e3a2a2578792438cba233f2763593e19c5",
+        "rev": "2fed6e1f256dad01c88c252908db95074063b236",
         "type": "github"
       },
       "original": {
-        "id": "nixpkgs",
-        "type": "indirect"
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "type": "github"
       }
     },
     "nixpkgs_9": {
@@ -617,11 +618,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-Ijexz2pmEl6a4ESDJkh3H4nnU50k/mN8MD5nei7yQqg=",
-        "path": "/nix/store/my2i8rrzacrx906fqbi9ljilpf5l8fav-source/playit-bin",
+        "path": "/nix/store/mxxax32fxxqrx7p54qsfcvfhrnvfijgs-source/playit-bin",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/my2i8rrzacrx906fqbi9ljilpf5l8fav-source/playit-bin",
+        "path": "/nix/store/mxxax32fxxqrx7p54qsfcvfhrnvfijgs-source/playit-bin",
         "type": "path"
       }
     },
@@ -650,11 +651,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-uQwTOkWHIZA2jHYQgZFfoeF9WL+yaMinDK8sBhC2yls=",
-        "path": "/nix/store/my2i8rrzacrx906fqbi9ljilpf5l8fav-source/scheme-langserver-bin",
+        "path": "/nix/store/mxxax32fxxqrx7p54qsfcvfhrnvfijgs-source/scheme-langserver-bin",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/my2i8rrzacrx906fqbi9ljilpf5l8fav-source/scheme-langserver-bin",
+        "path": "/nix/store/mxxax32fxxqrx7p54qsfcvfhrnvfijgs-source/scheme-langserver-bin",
         "type": "path"
       }
     },
