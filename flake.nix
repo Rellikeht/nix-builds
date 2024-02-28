@@ -59,6 +59,11 @@
         minizinc = getDef minizinc;
         breeze-hacked = getDef breeze-hacked;
         playit-bin = getDef playit-bin;
+
+        dwm = getDef dwm;
+        st = getDef st;
+        tabbed = getDef tabbed;
+        dmenu = getDef dmenu;
       };
     });
 
@@ -68,11 +73,6 @@
       in {
         minizinc-ide-bin = getDef minizinc-ide-bin;
         scheme-langserver-bin = getDef scheme-langserver-bin;
-
-        dwm = getDef dwm;
-        st = getDef st;
-        tabbed = getDef tabbed;
-        dmenu = getDef dmenu;
       })
       // packagesMulti.packages.${l64};
     packages =
