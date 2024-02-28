@@ -1,0 +1,77 @@
+{
+  "nodes": {
+    "flakeUtils": {
+      "inputs": {
+        "systems": "systems"
+      },
+      "locked": {
+        "lastModified": 1705309234,
+        "narHash": "sha256-uNRRNRKmJyCRC/8y1RqBkqWBLM034y4qN7EprSdmgyA=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "1ef2e671c3b0c19053962c07dbda38332dcebf26",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1709114604,
+        "narHash": "sha256-adaSlImFmPgoIIPmWT/rV+xpDq3YDw641qCd0Q++DXI=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "4c6c21d3c9bad3472533b0803dce3a43ae44cbb1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "package": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1706890847,
+        "narHash": "sha256-Ircqb+FOeEK2Oe/tRMmMSCwiIIsucAjPEx+xqvtsMcE=",
+        "owner": "playit-cloud",
+        "repo": "playit-agent",
+        "rev": "0ad91f6144532ff095b3b2ccb6ba692992e0940a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "playit-cloud",
+        "repo": "playit-agent",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeUtils": "flakeUtils",
+        "nixpkgs": "nixpkgs",
+        "package": "package"
+      }
+    },
+    "systems": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
