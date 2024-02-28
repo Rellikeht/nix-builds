@@ -62,6 +62,7 @@
         chuffed = getDef chuffed;
         minizinc = getDef minizinc;
         breeze-hacked = getDef breeze-hacked;
+        playit-bin = getDef playit-bin;
         dwm = getDef dwm;
         st = getDef st;
         tabbed = getDef tabbed;
