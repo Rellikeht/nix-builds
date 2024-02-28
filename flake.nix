@@ -8,6 +8,7 @@
     chuffed.url = "./chuffed";
     breeze-hacked.url = "./breeze-hacked";
     scheme-langserver-bin.url = "./scheme-langserver-bin";
+    playit-bin.url = "./playit-bin";
     dwm.url = github:Rellikeht/dwm;
     st.url = github:Rellikeht/st;
     tabbed.url = github:Rellikeht/tabbed;
@@ -23,6 +24,7 @@
     minizinc-ide-bin,
     breeze-hacked,
     scheme-langserver-bin,
+    playit-bin,
     dwm,
     st,
     tabbed,
@@ -43,6 +45,7 @@
         minizinc-ide-bin
         breeze-hacked
         scheme-langserver-bin
+        playit-bin
 
         dwm
         st

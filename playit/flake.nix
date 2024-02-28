@@ -23,8 +23,8 @@
       "aarch64-linux"
       "armv7l-linux"
 
-      "aarch64-darwin"
-      "x86_64-darwin"
+      # "aarch64-darwin"
+      # "x86_64-darwin"
     ];
     flib = flakeUtils.lib;
   in
@@ -35,7 +35,7 @@
       src = package;
     in {
       packages = {
-        default = pkgs.stdenv.mkDerivation {
+        default = pkgs.rustPlatform.buildRustPackage {
           inherit name system src;
 
           buildInputs = with pkgs; [
@@ -46,12 +46,14 @@
             cargo
           ];
 
-          buildPhase = ''
-            cargo run --release
-          '';
+          cargoLock = {
+            lockFile = "${src}/Cargo.lock";
+          };
 
+          # Some tests don't pass
           installPhase = ''
             ls $src
+            exit 1
             mkdir -p $out/bin
           '';
 
