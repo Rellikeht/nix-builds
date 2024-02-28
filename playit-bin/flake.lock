@@ -1,0 +1,112 @@
+{
+  "nodes": {
+    "flakeUtils": {
+      "inputs": {
+        "systems": "systems"
+      },
+      "locked": {
+        "lastModified": 1705309234,
+        "narHash": "sha256-uNRRNRKmJyCRC/8y1RqBkqWBLM034y4qN7EprSdmgyA=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "1ef2e671c3b0c19053962c07dbda38332dcebf26",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1709116111,
+        "narHash": "sha256-V7BbC39cGDOzJsCsmg+hCdBu1Tuhqs7kLcPxw86STh4=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "b84d9f029fa675d5ef312f032f322889149daa82",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "pkg-linux-a32": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-IdVq7tOx5bPLgDxTzPU/Cx2chY+gvSJINkg74QjTYk4=",
+        "type": "file",
+        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.12/playit-linux-armv7"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.12/playit-linux-armv7"
+      }
+    },
+    "pkg-linux-a64": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-kjs5gHJTsD+pI9AcBzeykZcLeWJxrTt5rrmd6Rjw1G0=",
+        "type": "file",
+        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.12/playit-linux-aarch64"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.12/playit-linux-aarch64"
+      }
+    },
+    "pkg-linux-x64": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-kXImWxR6Ln83Jc97t9wusijZIs3NW4b5QQOa3s3QH1U=",
+        "type": "file",
+        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.12/playit-linux-amd64"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.12/playit-linux-amd64"
+      }
+    },
+    "pkg-linux-x86": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-ME8PpqheNKXPNLev8qck9HprHnjaSgBxz7O0zMoUNfI=",
+        "type": "file",
+        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.12/playit-linux-i686"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.12/playit-linux-i686"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flakeUtils": "flakeUtils",
+        "nixpkgs": "nixpkgs",
+        "pkg-linux-a32": "pkg-linux-a32",
+        "pkg-linux-a64": "pkg-linux-a64",
+        "pkg-linux-x64": "pkg-linux-x64",
+        "pkg-linux-x86": "pkg-linux-x86"
+      }
+    },
+    "systems": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
