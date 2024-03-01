@@ -9,12 +9,14 @@
     st.url = github:Rellikeht/st;
     tabbed.url = github:Rellikeht/tabbed;
     dmenu.url = github:Rellikeht/dmenu;
+    svim.url = github:Rellikeht/svim-comptools;
 
     minizinc.url = "./minizinc";
     minizinc-ide-bin.url = "./minizinc-ide-bin";
     chuffed.url = "./chuffed";
     breeze-hacked.url = "./breeze-hacked";
     scheme-langserver-bin.url = "./scheme-langserver-bin";
+    playit.url = "./playit";
     playit-bin.url = "./playit-bin";
   };
 
@@ -27,11 +29,13 @@
     minizinc-ide-bin,
     breeze-hacked,
     scheme-langserver-bin,
+    playit,
     playit-bin,
     dwm,
     st,
     tabbed,
     dmenu,
+    svim,
   }: let
     systems = ["x86_64-linux" "aarch64-linux"];
     getDefS = system: pkg: pkg.packages.${system}.default;
@@ -59,11 +63,13 @@
         minizinc = getDef minizinc;
         breeze-hacked = getDef breeze-hacked;
         playit-bin = getDef playit-bin;
+        playit = getDef playit;
 
         dwm = getDef dwm;
         st = getDef st;
         tabbed = getDef tabbed;
         dmenu = getDef dmenu;
+        svim = getDef svim;
       };
     });
 
