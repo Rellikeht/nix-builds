@@ -1,5 +1,5 @@
 {
-  description = "xsession running ~/.xinitrc";
+  description = "~/.xinitrc can now run as xsession";
 
   inputs = {
     nixpkgs.url = github:NixOS/nixpkgs;
@@ -22,7 +22,6 @@
   in
     flib.eachSystem systems (system: let
       pkgs = nixpkgs.legacyPackages.${system};
-      lib = pkgs.lib;
       name = "xinit-xsession";
       src = self;
     in {
@@ -31,22 +30,21 @@
           inherit name system src;
 
           phases = ["installPhase"];
-          installPhase = ''
+          installPhase = let
+            sesDir = "$out/share/xsessions";
+          in ''
             mkdir -p $out/bin
-            mkdir -p $out/share/xsessions
+            mkdir -p ${sesDir}
             cp $src/xinitrcsession-helper $out/bin
-            cp $src/xinitrc.desktop $out/share/xsessions
+            cp $src/xinitrc.desktop ${sesDir}
           '';
 
-          meta = with lib; {
+          meta = with pkgs.lib; {
             homepage = "https://aur.archlinux.org/packages/xinit-xsession";
-            description = "TODO";
+            description = "~/.xinitrc can now run as xsession";
             license = licenses.gpl3;
-            # mainProgram = "";
             maintainers = ["Rellikeht"];
             platforms = platforms.linux;
-
-            longDescription = '''';
           };
         };
       };
