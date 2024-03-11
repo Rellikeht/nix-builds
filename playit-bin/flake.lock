@@ -5,11 +5,11 @@
         "systems": "systems"
       },
       "locked": {
-        "lastModified": 1705309234,
-        "narHash": "sha256-uNRRNRKmJyCRC/8y1RqBkqWBLM034y4qN7EprSdmgyA=",
+        "lastModified": 1710146030,
+        "narHash": "sha256-SZ5L6eA7HJ/nmkzGG7/ISclqe6oZdOZTNoesiInkXPQ=",
         "owner": "numtide",
         "repo": "flake-utils",
-        "rev": "1ef2e671c3b0c19053962c07dbda38332dcebf26",
+        "rev": "b1d9ab70662946ef0850d488da1c9019f3a9752a",
         "type": "github"
       },
       "original": {
@@ -20,11 +20,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1709116111,
-        "narHash": "sha256-V7BbC39cGDOzJsCsmg+hCdBu1Tuhqs7kLcPxw86STh4=",
+        "lastModified": 1710163406,
+        "narHash": "sha256-Bm+sR2BldtO6RxHl6oVvWHQmdvUGms3p03igWU0woDo=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "b84d9f029fa675d5ef312f032f322889149daa82",
+        "rev": "fc405ec2d865736e49f747699f21e0eacdf5ea7d",
         "type": "github"
       },
       "original": {
@@ -36,49 +36,49 @@
     "pkg-linux-a32": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-IdVq7tOx5bPLgDxTzPU/Cx2chY+gvSJINkg74QjTYk4=",
+        "narHash": "sha256-xykdXw4WvK5EQ9tOKllOrdWW8j11HlFUWQxTEjBa98s=",
         "type": "file",
-        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.12/playit-linux-armv7"
+        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.13/playit-linux-armv7"
       },
       "original": {
         "type": "file",
-        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.12/playit-linux-armv7"
+        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.13/playit-linux-armv7"
       }
     },
     "pkg-linux-a64": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-kjs5gHJTsD+pI9AcBzeykZcLeWJxrTt5rrmd6Rjw1G0=",
+        "narHash": "sha256-6dCEjRw/TwUEmcoJzcGcgUj5KISjLFpx14N8tfs2HLI=",
         "type": "file",
-        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.12/playit-linux-aarch64"
+        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.13/playit-linux-aarch64"
       },
       "original": {
         "type": "file",
-        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.12/playit-linux-aarch64"
+        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.13/playit-linux-aarch64"
       }
     },
     "pkg-linux-x64": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-kXImWxR6Ln83Jc97t9wusijZIs3NW4b5QQOa3s3QH1U=",
+        "narHash": "sha256-uU/jHFwxEmdd/YdfJkhZ0rDUkJJ/3T5vThsc4GNOqoE=",
         "type": "file",
-        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.12/playit-linux-amd64"
+        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.13/playit-linux-amd64"
       },
       "original": {
         "type": "file",
-        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.12/playit-linux-amd64"
+        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.13/playit-linux-amd64"
       }
     },
     "pkg-linux-x86": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-ME8PpqheNKXPNLev8qck9HprHnjaSgBxz7O0zMoUNfI=",
+        "narHash": "sha256-K4KcIGmX8GF/NzaaOq8lte63SMXe0TH0tHYbeat08ww=",
         "type": "file",
-        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.12/playit-linux-i686"
+        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.13/playit-linux-i686"
       },
       "original": {
         "type": "file",
-        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.12/playit-linux-i686"
+        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.13/playit-linux-i686"
       }
     },
     "root": {

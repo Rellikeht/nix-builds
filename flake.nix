@@ -2,14 +2,14 @@
   description = "Flake consisting of all programs in working state in this repo";
 
   inputs = {
-    flakeUtils.url = github:numtide/flake-utils;
-    nixpkgs.url = github:NixOS/nixpkgs;
+    flakeUtils.url = "github:numtide/flake-utils";
+    nixpkgs.url = "github:NixOS/nixpkgs";
 
-    dwm.url = github:Rellikeht/dwm;
-    st.url = github:Rellikeht/st;
-    tabbed.url = github:Rellikeht/tabbed;
-    dmenu.url = github:Rellikeht/dmenu;
-    svim.url = github:Rellikeht/svim-comptools;
+    dwm.url = "github:Rellikeht/dwm";
+    st.url = "github:Rellikeht/st";
+    tabbed.url = "github:Rellikeht/tabbed";
+    dmenu.url = "github:Rellikeht/dmenu";
+    svim.url = "github:Rellikeht/svim-comptools";
 
     chuffed.url = "./chuffed";
     minizinc.url = "./minizinc";
@@ -46,7 +46,7 @@
     l64 = "x86_64-linux";
 
     # TODO fuck this shit
-    pkgInputs = builtins.tail (builtins.tail (builtins.tail inputs));
+    # pkgInputs = builtins.tail (builtins.tail (builtins.tail inputs));
 
     packagesMulti = flakeUtils.lib.eachSystem systems (system: let
       # pkgs = nixpkgs.legacyPackages.${system};

@@ -2,9 +2,9 @@
   description = "Binary build of minizinc ide with solvers";
 
   inputs = {
-    # nixpkgs.url = github:NixOS/nixpkgs/9c1bd826948a7;
-    nixpkgs.url = github:NixOS/nixpkgs;
-    flakeUtils.url = github:numtide/flake-utils;
+    # nixpkgs.url = "github:NixOS/nixpkgs/9c1bd826948a7";
+    nixpkgs.url = "github:NixOS/nixpkgs";
+    flakeUtils.url = "github:numtide/flake-utils";
     pkg-linux-x64 = {
       url = "https://github.com/MiniZinc/MiniZincIDE/releases/download/2.8.3/MiniZincIDE-2.8.3-bundle-linux-x86_64.tgz";
       flake = false;
