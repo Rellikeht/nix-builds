@@ -20,11 +20,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1710163406,
-        "narHash": "sha256-Bm+sR2BldtO6RxHl6oVvWHQmdvUGms3p03igWU0woDo=",
+        "lastModified": 1716409524,
+        "narHash": "sha256-/RkBE/B1cgMwDVHezHysqmXtoY3kquHzz132OHOP4v0=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "fc405ec2d865736e49f747699f21e0eacdf5ea7d",
+        "rev": "7cf614ce3f376ead8c9c89cb82cb575e33df8453",
         "type": "github"
       },
       "original": {
@@ -36,14 +36,14 @@
     "pkg-linux-x64": {
       "flake": false,
       "locked": {
-        "lastModified": 1706767975,
-        "narHash": "sha256-FphmfKDjrVwKniSm31lwj+Ip9Jx3v6RtWnl37bGXf0k=",
+        "lastModified": 1715316399,
+        "narHash": "sha256-2gZL/thniRrPur49wrK4Y7w9WVKXv3l+OFF1zfZCG2U=",
         "type": "tarball",
-        "url": "https://github.com/MiniZinc/MiniZincIDE/releases/download/2.8.3/MiniZincIDE-2.8.3-bundle-linux-x86_64.tgz"
+        "url": "https://github.com/MiniZinc/MiniZincIDE/releases/download/2.8.4/MiniZincIDE-2.8.4-bundle-linux-x86_64.tgz"
       },
       "original": {
         "type": "tarball",
-        "url": "https://github.com/MiniZinc/MiniZincIDE/releases/download/2.8.3/MiniZincIDE-2.8.3-bundle-linux-x86_64.tgz"
+        "url": "https://github.com/MiniZinc/MiniZincIDE/releases/download/2.8.4/MiniZincIDE-2.8.4-bundle-linux-x86_64.tgz"
       }
     },
     "root": {

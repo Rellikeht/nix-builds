@@ -6,7 +6,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs";
     flakeUtils.url = "github:numtide/flake-utils";
     pkg-linux-x64 = {
-      url = "https://github.com/MiniZinc/MiniZincIDE/releases/download/2.8.3/MiniZincIDE-2.8.3-bundle-linux-x86_64.tgz";
+      url = "https://github.com/MiniZinc/MiniZincIDE/releases/download/2.8.4/MiniZincIDE-2.8.4-bundle-linux-x86_64.tgz";
       flake = false;
     };
   };
