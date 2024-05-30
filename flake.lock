@@ -807,11 +807,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-vGZKbWKv6dov6X+cTPDN7AT34DnA14FsypkyRnu9o4k=",
-        "path": "/nix/store/irncbgh84i1ls1yhr3h5nqxqzw5cfprx-source/playit-bin",
+        "path": "/nix/store/m6svidkkyyrrsvxwli36fx1nc9k70d8j-source/playit-bin",
         "type": "path"
       },
       "original": {
-        "path": "/nix/store/irncbgh84i1ls1yhr3h5nqxqzw5cfprx-source/playit-bin",
+        "path": "/nix/store/m6svidkkyyrrsvxwli36fx1nc9k70d8j-source/playit-bin",
         "type": "path"
       }
     },
