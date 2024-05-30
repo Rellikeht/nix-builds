@@ -597,11 +597,11 @@
     },
     "nixpkgs_8": {
       "locked": {
-        "lastModified": 1717080126,
-        "narHash": "sha256-QSnSNAus2RpFMq2S5VaT1GrmlBo3+RPYyaYKnuhhbZo=",
+        "lastModified": 1717084398,
+        "narHash": "sha256-X3nfXgiVOm8dm9oruXaQvOk1bmI46Ua3f4my9lyR660=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "cf099def273a5c201a1b40de19c841769a73de7b",
+        "rev": "0449b029e099413902dfdef4622b0caa26250b46",
         "type": "github"
       },
       "original": {
@@ -805,14 +805,18 @@
         "pkg-linux-x86": "pkg-linux-x86"
       },
       "locked": {
-        "lastModified": 1,
-        "narHash": "sha256-vGZKbWKv6dov6X+cTPDN7AT34DnA14FsypkyRnu9o4k=",
-        "path": "playit-bin",
-        "type": "path"
+        "dir": "playit-bin",
+        "dirtyRev": "22ec0e7ee884a69053b2552b456c47094d4f23e8-dirty",
+        "dirtyShortRev": "22ec0e7-dirty",
+        "lastModified": 1717084510,
+        "narHash": "sha256-//gg3a9MC2qbrwHVsrwsDXZ4L40XrC93zDoXogCZr2A=",
+        "type": "git",
+        "url": "file:.?dir=playit-bin"
       },
       "original": {
-        "path": "playit-bin",
-        "type": "path"
+        "dir": "playit-bin",
+        "type": "git",
+        "url": "file:.?dir=playit-bin"
       }
     },
     "root": {
