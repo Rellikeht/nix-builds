@@ -806,17 +806,15 @@
       },
       "locked": {
         "dir": "playit-bin",
-        "lastModified": 1717085024,
-        "narHash": "sha256-TPfADMVzd8eOX6b1m25zEzvuX7vAPokvVvh8Uowu9NM=",
-        "ref": "HEAD",
-        "rev": "e9bb0df4b2638f6a8535645358e8a9b363731f58",
-        "revCount": 62,
+        "dirtyRev": "e699ee5cc0af0b40fbeeebe4901c46317aafca72-dirty",
+        "dirtyShortRev": "e699ee5-dirty",
+        "lastModified": 1717085370,
+        "narHash": "sha256-JRGFmDgpzVBUEl/vzvq/tbz8FPSsON1oC8LpCxf5Rvs=",
         "type": "git",
         "url": "file:.?dir=playit-bin"
       },
       "original": {
         "dir": "playit-bin",
-        "ref": "HEAD",
         "type": "git",
         "url": "file:.?dir=playit-bin"
       }
