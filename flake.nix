@@ -19,7 +19,7 @@
     playit-bin = {
       # url = "path:playit-bin";
       # path = "./playit-bin";
-      url = "git+file:.?dir=playit-bin&ref=HEAD";
+      url = "git+file:.?dir=playit-bin";
     };
 
     scheme-langserver-bin.url = "path:scheme-langserver-bin";
