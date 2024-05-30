@@ -17,7 +17,10 @@
 
     playit-bin = {
       # type = "path";
-      url = "path:playit-bin";
+      # url = "path:playit-bin";
+      # dir = ./playit-bin;
+      # path = "./playit-bin";
+      url = "./playit-bin?dir=.";
     };
     # playit-bin.url = "path:playit-bin";
     scheme-langserver-bin.url = "path:scheme-langserver-bin";
