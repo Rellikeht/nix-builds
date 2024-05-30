@@ -15,16 +15,13 @@
     minizinc.url = "path:minizinc";
     playit.url = "path:playit";
 
-    # Workaround if nothing else works
-    # "git+file:.?dir=mysubflake_subdir";
-    playit-bin = {
-      # type = "path";
-      # url = "path:playit-bin";
-      # dir = ./playit-bin;
-      # path = "./playit-bin";
-      url = "git+file:.?dir=playit-bin";
-    };
     # playit-bin.url = "path:playit-bin";
+    playit-bin = {
+      # url = "path:playit-bin";
+      # path = "./playit-bin";
+      url = "git+file:.?dir=playit-bin&ref=HEAD";
+    };
+
     scheme-langserver-bin.url = "path:scheme-langserver-bin";
     minizinc-ide-bin.url = "path:minizinc-ide-bin";
 
