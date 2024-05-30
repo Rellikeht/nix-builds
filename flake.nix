@@ -11,22 +11,33 @@
     dmenu.url = "github:Rellikeht/dmenu";
     svim.url = "github:Rellikeht/svim-comptools";
 
-    chuffed.url = "path:chuffed";
-    minizinc.url = "path:minizinc";
-    playit.url = "path:playit";
+    chuffed.url = "github:Rellikeht/nix-builds?dir=chuffed";
+    minizinc.url = "github:Rellikeht/nix-builds?dir=minizinc";
+    playit.url = "github:Rellikeht/nix-builds?dir=playit";
+    playit-bin.url = "github:Rellikeht/nix-builds?dir=playit-bin";
 
-    # playit-bin.url = "path:playit-bin";
-    playit-bin = {
-      # url = "path:playit-bin";
-      # path = "./playit-bin";
-      url = "git+file:.?dir=playit-bin";
-    };
+    scheme-langserver-bin.url = "github:Rellikeht/nix-builds?dir=scheme-langserver-bin";
+    minizinc-ide-bin.url = "github:Rellikeht/nix-builds?dir=minizinc-ide-bin";
 
-    scheme-langserver-bin.url = "path:scheme-langserver-bin";
-    minizinc-ide-bin.url = "path:minizinc-ide-bin";
+    breeze-hacked.url = "github:Rellikeht/nix-builds?dir=breeze-hacked";
+    xinit-xsession.url = "github:Rellikeht/nix-builds?dir=xinit-xsession";
 
-    breeze-hacked.url = "path:breeze-hacked";
-    xinit-xsession.url = "path:xinit-xsession";
+    # chuffed.url = "path:chuffed";
+    # minizinc.url = "path:minizinc";
+    # playit.url = "path:playit";
+
+    # # playit-bin.url = "path:playit-bin";
+    # playit-bin = {
+    #   # url = "path:playit-bin";
+    #   # path = "./playit-bin";
+    #   url = "git+file:.?dir=playit-bin";
+    # };
+
+    # scheme-langserver-bin.url = "path:scheme-langserver-bin";
+    # minizinc-ide-bin.url = "path:minizinc-ide-bin";
+
+    # breeze-hacked.url = "path:breeze-hacked";
+    # xinit-xsession.url = "path:xinit-xsession";
   };
 
   outputs = inputs @ {

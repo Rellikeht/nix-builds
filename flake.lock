@@ -7,14 +7,19 @@
         "package": "package"
       },
       "locked": {
-        "lastModified": 1,
-        "narHash": "sha256-qOCJObjhIyFu9XxFVVLcYw5NCY9HY2kjly9jnsjuVKo=",
-        "path": "breeze-hacked",
-        "type": "path"
+        "dir": "breeze-hacked",
+        "lastModified": 1717085965,
+        "narHash": "sha256-UHNo0kLrPYNqg85eeNlS6G258BFKqRB/tEfyGbf9AXs=",
+        "owner": "Rellikeht",
+        "repo": "nix-builds",
+        "rev": "a96d94d36202a7e424c2e3de4fb71bc7f8145c45",
+        "type": "github"
       },
       "original": {
-        "path": "breeze-hacked",
-        "type": "path"
+        "dir": "breeze-hacked",
+        "owner": "Rellikeht",
+        "repo": "nix-builds",
+        "type": "github"
       }
     },
     "chuffed": {
@@ -24,14 +29,19 @@
         "package": "package_2"
       },
       "locked": {
-        "lastModified": 1,
-        "narHash": "sha256-9ekBJBu46mY5nGiVDbJ3lpr6wDMB6z6Bqv3AajtU4N0=",
-        "path": "chuffed",
-        "type": "path"
+        "dir": "chuffed",
+        "lastModified": 1717085965,
+        "narHash": "sha256-UHNo0kLrPYNqg85eeNlS6G258BFKqRB/tEfyGbf9AXs=",
+        "owner": "Rellikeht",
+        "repo": "nix-builds",
+        "rev": "a96d94d36202a7e424c2e3de4fb71bc7f8145c45",
+        "type": "github"
       },
       "original": {
-        "path": "chuffed",
-        "type": "path"
+        "dir": "chuffed",
+        "owner": "Rellikeht",
+        "repo": "nix-builds",
+        "type": "github"
       }
     },
     "chuffed_2": {
@@ -372,14 +382,19 @@
         "package": "package_4"
       },
       "locked": {
-        "lastModified": 1,
-        "narHash": "sha256-8kZcyUlNa7L2sx8iELuoD6RGG2ajpVAJRxIMHxvYTOg=",
-        "path": "minizinc",
-        "type": "path"
+        "dir": "minizinc",
+        "lastModified": 1717085965,
+        "narHash": "sha256-UHNo0kLrPYNqg85eeNlS6G258BFKqRB/tEfyGbf9AXs=",
+        "owner": "Rellikeht",
+        "repo": "nix-builds",
+        "rev": "a96d94d36202a7e424c2e3de4fb71bc7f8145c45",
+        "type": "github"
       },
       "original": {
-        "path": "minizinc",
-        "type": "path"
+        "dir": "minizinc",
+        "owner": "Rellikeht",
+        "repo": "nix-builds",
+        "type": "github"
       }
     },
     "minizinc-ide-bin": {
@@ -389,14 +404,19 @@
         "pkg-linux-x64": "pkg-linux-x64"
       },
       "locked": {
-        "lastModified": 1,
-        "narHash": "sha256-0y5PZutv/sWE8Xb+F+eMjyeQ7Ri3BcDbsguuOuA/Yjk=",
-        "path": "minizinc-ide-bin",
-        "type": "path"
+        "dir": "minizinc-ide-bin",
+        "lastModified": 1717085965,
+        "narHash": "sha256-UHNo0kLrPYNqg85eeNlS6G258BFKqRB/tEfyGbf9AXs=",
+        "owner": "Rellikeht",
+        "repo": "nix-builds",
+        "rev": "a96d94d36202a7e424c2e3de4fb71bc7f8145c45",
+        "type": "github"
       },
       "original": {
-        "path": "minizinc-ide-bin",
-        "type": "path"
+        "dir": "minizinc-ide-bin",
+        "owner": "Rellikeht",
+        "repo": "nix-builds",
+        "type": "github"
       }
     },
     "nixpkgs": {
@@ -785,14 +805,19 @@
         "package": "package_5"
       },
       "locked": {
-        "lastModified": 1,
-        "narHash": "sha256-IoSoP5e8nhheelW6uhLq3X2D5+kecRl60520h48pqKE=",
-        "path": "playit",
-        "type": "path"
+        "dir": "playit",
+        "lastModified": 1717085965,
+        "narHash": "sha256-UHNo0kLrPYNqg85eeNlS6G258BFKqRB/tEfyGbf9AXs=",
+        "owner": "Rellikeht",
+        "repo": "nix-builds",
+        "rev": "a96d94d36202a7e424c2e3de4fb71bc7f8145c45",
+        "type": "github"
       },
       "original": {
-        "path": "playit",
-        "type": "path"
+        "dir": "playit",
+        "owner": "Rellikeht",
+        "repo": "nix-builds",
+        "type": "github"
       }
     },
     "playit-bin": {
@@ -806,17 +831,18 @@
       },
       "locked": {
         "dir": "playit-bin",
-        "dirtyRev": "e699ee5cc0af0b40fbeeebe4901c46317aafca72-dirty",
-        "dirtyShortRev": "e699ee5-dirty",
-        "lastModified": 1717085370,
-        "narHash": "sha256-JRGFmDgpzVBUEl/vzvq/tbz8FPSsON1oC8LpCxf5Rvs=",
-        "type": "git",
-        "url": "file:.?dir=playit-bin"
+        "lastModified": 1717085965,
+        "narHash": "sha256-UHNo0kLrPYNqg85eeNlS6G258BFKqRB/tEfyGbf9AXs=",
+        "owner": "Rellikeht",
+        "repo": "nix-builds",
+        "rev": "a96d94d36202a7e424c2e3de4fb71bc7f8145c45",
+        "type": "github"
       },
       "original": {
         "dir": "playit-bin",
-        "type": "git",
-        "url": "file:.?dir=playit-bin"
+        "owner": "Rellikeht",
+        "repo": "nix-builds",
+        "type": "github"
       }
     },
     "root": {
@@ -845,14 +871,19 @@
         "package": "package_6"
       },
       "locked": {
-        "lastModified": 1,
-        "narHash": "sha256-cShYcnKdLqaJQKSyJh/Pn9UkoE1AcVdNxDxZIyKLnPo=",
-        "path": "scheme-langserver-bin",
-        "type": "path"
+        "dir": "scheme-langserver-bin",
+        "lastModified": 1717085965,
+        "narHash": "sha256-UHNo0kLrPYNqg85eeNlS6G258BFKqRB/tEfyGbf9AXs=",
+        "owner": "Rellikeht",
+        "repo": "nix-builds",
+        "rev": "a96d94d36202a7e424c2e3de4fb71bc7f8145c45",
+        "type": "github"
       },
       "original": {
-        "path": "scheme-langserver-bin",
-        "type": "path"
+        "dir": "scheme-langserver-bin",
+        "owner": "Rellikeht",
+        "repo": "nix-builds",
+        "type": "github"
       }
     },
     "st": {
@@ -1160,14 +1191,19 @@
         "nixpkgs": "nixpkgs_15"
       },
       "locked": {
-        "lastModified": 1,
-        "narHash": "sha256-SOlR6aNHjdCEp67/MYJZ3whlKwesWeg6rxCGbg8JetY=",
-        "path": "xinit-xsession",
-        "type": "path"
+        "dir": "xinit-xsession",
+        "lastModified": 1717085965,
+        "narHash": "sha256-UHNo0kLrPYNqg85eeNlS6G258BFKqRB/tEfyGbf9AXs=",
+        "owner": "Rellikeht",
+        "repo": "nix-builds",
+        "rev": "a96d94d36202a7e424c2e3de4fb71bc7f8145c45",
+        "type": "github"
       },
       "original": {
-        "path": "xinit-xsession",
-        "type": "path"
+        "dir": "xinit-xsession",
+        "owner": "Rellikeht",
+        "repo": "nix-builds",
+        "type": "github"
       }
     }
   },
