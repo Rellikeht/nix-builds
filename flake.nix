@@ -11,20 +11,20 @@
     dmenu.url = "github:Rellikeht/dmenu";
     svim.url = "github:Rellikeht/svim-comptools";
 
-    chuffed.url = "path:./chuffed";
-    minizinc.url = "path:./minizinc";
-    playit.url = "path:./playit";
+    chuffed.url = "path:chuffed";
+    minizinc.url = "path:minizinc";
+    playit.url = "path:playit";
 
     playit-bin = {
       # type = "path";
       url = "path:playit-bin";
     };
-    # playit-bin.url = "path:./playit-bin";
-    scheme-langserver-bin.url = "path:./scheme-langserver-bin";
-    minizinc-ide-bin.url = "path:./minizinc-ide-bin";
+    # playit-bin.url = "path:playit-bin";
+    scheme-langserver-bin.url = "path:scheme-langserver-bin";
+    minizinc-ide-bin.url = "path:minizinc-ide-bin";
 
-    breeze-hacked.url = "path:./breeze-hacked";
-    xinit-xsession.url = "path:./xinit-xsession";
+    breeze-hacked.url = "path:breeze-hacked";
+    xinit-xsession.url = "path:xinit-xsession";
   };
 
   outputs = inputs @ {

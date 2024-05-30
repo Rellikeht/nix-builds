@@ -9,11 +9,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-qOCJObjhIyFu9XxFVVLcYw5NCY9HY2kjly9jnsjuVKo=",
-        "path": "./breeze-hacked",
+        "path": "breeze-hacked",
         "type": "path"
       },
       "original": {
-        "path": "./breeze-hacked",
+        "path": "breeze-hacked",
         "type": "path"
       }
     },
@@ -26,11 +26,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-9ekBJBu46mY5nGiVDbJ3lpr6wDMB6z6Bqv3AajtU4N0=",
-        "path": "./chuffed",
+        "path": "chuffed",
         "type": "path"
       },
       "original": {
-        "path": "./chuffed",
+        "path": "chuffed",
         "type": "path"
       }
     },
@@ -374,11 +374,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-8kZcyUlNa7L2sx8iELuoD6RGG2ajpVAJRxIMHxvYTOg=",
-        "path": "./minizinc",
+        "path": "minizinc",
         "type": "path"
       },
       "original": {
-        "path": "./minizinc",
+        "path": "minizinc",
         "type": "path"
       }
     },
@@ -391,11 +391,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-0y5PZutv/sWE8Xb+F+eMjyeQ7Ri3BcDbsguuOuA/Yjk=",
-        "path": "./minizinc-ide-bin",
+        "path": "minizinc-ide-bin",
         "type": "path"
       },
       "original": {
-        "path": "./minizinc-ide-bin",
+        "path": "minizinc-ide-bin",
         "type": "path"
       }
     },
@@ -787,11 +787,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-IoSoP5e8nhheelW6uhLq3X2D5+kecRl60520h48pqKE=",
-        "path": "./playit",
+        "path": "playit",
         "type": "path"
       },
       "original": {
-        "path": "./playit",
+        "path": "playit",
         "type": "path"
       }
     },
@@ -843,11 +843,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-cShYcnKdLqaJQKSyJh/Pn9UkoE1AcVdNxDxZIyKLnPo=",
-        "path": "./scheme-langserver-bin",
+        "path": "scheme-langserver-bin",
         "type": "path"
       },
       "original": {
-        "path": "./scheme-langserver-bin",
+        "path": "scheme-langserver-bin",
         "type": "path"
       }
     },
@@ -1158,11 +1158,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-SOlR6aNHjdCEp67/MYJZ3whlKwesWeg6rxCGbg8JetY=",
-        "path": "./xinit-xsession",
+        "path": "xinit-xsession",
         "type": "path"
       },
       "original": {
-        "path": "./xinit-xsession",
+        "path": "xinit-xsession",
         "type": "path"
       }
     }
