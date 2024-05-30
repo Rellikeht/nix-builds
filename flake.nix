@@ -15,7 +15,11 @@
     minizinc.url = "path:./minizinc";
     playit.url = "path:./playit";
 
-    playit-bin.url = "path:./playit-bin";
+    playit-bin = {
+      # type = "path";
+      url = "./playit-bin";
+    };
+    # playit-bin.url = "path:./playit-bin";
     scheme-langserver-bin.url = "path:./scheme-langserver-bin";
     minizinc-ide-bin.url = "path:./minizinc-ide-bin";
 

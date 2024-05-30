@@ -597,11 +597,11 @@
     },
     "nixpkgs_8": {
       "locked": {
-        "lastModified": 1716410285,
-        "narHash": "sha256-Yed/hg1CwaLJSw9AuWZ9xFzjNOZVVx8AepgoIYJEhjQ=",
+        "lastModified": 1717077906,
+        "narHash": "sha256-ox6xiqCDNhTykc4sOOEXZp3dasUusFxy575mepE+yk8=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "9eb52cbcad7766b0202fdc366e83fcf5178bda65",
+        "rev": "5da922e0d7add926413d1aa293c9721d6dcecc04",
         "type": "github"
       },
       "original": {
@@ -807,11 +807,11 @@
       "locked": {
         "lastModified": 1,
         "narHash": "sha256-vGZKbWKv6dov6X+cTPDN7AT34DnA14FsypkyRnu9o4k=",
-        "path": "./playit-bin",
+        "path": "/nix/store/dhc9g7ashzschj166rl9p9l8vfmgas4q-source/playit-bin",
         "type": "path"
       },
       "original": {
-        "path": "./playit-bin",
+        "path": "/nix/store/dhc9g7ashzschj166rl9p9l8vfmgas4q-source/playit-bin",
         "type": "path"
       }
     },
@@ -877,11 +877,11 @@
         "vim": "vim"
       },
       "locked": {
-        "lastModified": 1716410259,
-        "narHash": "sha256-qJUJc6wcfIcceAXu3oMEafu8OMGSM7O5rXY4hS4KUK4=",
+        "lastModified": 1716414770,
+        "narHash": "sha256-mJhDIM59vpOkODosIM/UYeh70oGhOH9atFcQpwoU9pY=",
         "owner": "Rellikeht",
         "repo": "svim-comptools",
-        "rev": "35434934eb4b53e9decf82fc6e6ea9e402fdb831",
+        "rev": "6da8521fb6696b6e896367f636d5d01759199306",
         "type": "github"
       },
       "original": {
