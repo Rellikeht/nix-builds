@@ -2,6 +2,7 @@
   description = "Flake consisting of all programs in working state in this repo";
 
   inputs = {
+    # {{{
     flakeUtils.url = "github:numtide/flake-utils";
     nixpkgs.url = "github:NixOS/nixpkgs";
 
@@ -38,9 +39,10 @@
 
     # breeze-hacked.url = "path:breeze-hacked";
     # xinit-xsession.url = "path:xinit-xsession";
-  };
+  }; # }}}
 
   outputs = inputs @ {
+    # {{{
     self,
     nixpkgs,
     flakeUtils,
@@ -57,11 +59,14 @@
     minizinc-ide-bin,
     breeze-hacked,
     xinit-xsession,
-  }: let
+  }:
+  # }}}
+  let
+    # {{{
     systems = ["x86_64-linux" "aarch64-linux"];
     getDefS = system: pkg: pkg.packages.${system}.default;
     l64 = "x86_64-linux";
-
+    # }}}
     # TODO fuck this shit
     # pkgInputs = builtins.tail (builtins.tail (builtins.tail inputs));
 
@@ -80,6 +85,7 @@
       # });
 
       packages = {
+        # {{{
         dwm = getDef dwm;
         st = getDef st;
         tabbed = getDef tabbed;
@@ -94,7 +100,7 @@
 
         breeze-hacked = getDef breeze-hacked;
         xinit-xsession = getDef xinit-xsession;
-      };
+      }; # }}}
     });
 
     packagesL64 =
