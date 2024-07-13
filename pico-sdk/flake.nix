@@ -26,27 +26,59 @@
     flake-utils.lib.eachDefaultSystem (system: let
       pkgs = nixpkgs.legacyPackages.${system};
     in rec {
-      packages.default = pkgs.stdenv.mkDerivation {
+      packages = rec {
         # {{{
-        name = "pico-sdk";
-        src = sdk;
 
-        # nativeBuildInputs = with pkgs; [cmake];
+        pioasm = pkgs.stdenv.mkDerivation {
+          # {{{
+          name = "pioasm";
+          src = "${sdk}/tools/pioasm";
+          nativeBuildInputs = with pkgs; [cmake];
 
-        # SDK contains libraries and build-system to develop projects for RP2040 chip
-        # We only need to compile pioasm binary
-        # sourceRoot = "${sdk}/tools/pioasm";
+          installPhase = ''
+            mkdir -p $out/bin
+            cp pioasm $out/bin
+            chmod 755 $out/bin/pioasm
+          '';
+        }; # }}}
 
-        installPhase = ''
-          # runHook preInstall
-          cd $src
-          mkdir -p $out/lib/pico-sdk
-          cp -a * $out/lib/pico-sdk/
-          # cp -a ../../../* $out/lib/pico-sdk/
-          # chmod 755 $out/lib/pico-sdk/tools/pioasm/build/pioasm
-          # runHook postInstall
-        '';
-      }; # }}}
+        elf2uf2 = pkgs.stdenv.mkDerivation rec {
+          # {{{
+          name = "elf2uf2";
+          src = "${sdk}";
+          nativeBuildInputs = with pkgs; [cmake];
+          sourceRoot = "source/tools/elf2uf2";
+
+          installPhase = ''
+            mkdir -p $out/bin
+            cp elf2uf2 $out/bin
+            chmod 755 $out/bin/elf2uf2
+          '';
+        }; # }}}
+
+        default = pkgs.stdenv.mkDerivation {
+          # {{{
+          name = "pico-sdk";
+          src = "${sdk}";
+
+          installPhase = ''
+            mkdir -p $out/lib/pico-sdk
+            cp -a * $out/lib/pico-sdk
+
+            mkdir -p $out/bin
+            cp -a ${packages.elf2uf2}/bin/elf2uf2 $out/bin
+            cp -a ${packages.elf2uf2}/bin/elf2uf2 $out/lib/pico-sdk/tools/elf2uf2/
+
+            mkdir -p $out/bin
+            cp -a ${packages.pioasm}/bin/pioasm $out/bin
+            cp -a ${packages.pioasm}/bin/pioasm $out/lib/pico-sdk/tools/pioasm/
+          '';
+
+          #
+        }; # }}}
+
+        # }}}
+      };
 
       devShells.default = with pkgs;
         mkShell {

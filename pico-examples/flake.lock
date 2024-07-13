@@ -1,0 +1,164 @@
+{
+  "nodes": {
+    "examples": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1720716757,
+        "narHash": "sha256-pw2N2t0/92CAPIKFhy0FiSk5jO2Ju0awJzZAPdMeOL4=",
+        "owner": "raspberrypi",
+        "repo": "pico-examples",
+        "rev": "e32ee9ec701e3a64099fb41547da69e97d210483",
+        "type": "github"
+      },
+      "original": {
+        "owner": "raspberrypi",
+        "repo": "pico-examples",
+        "type": "github"
+      }
+    },
+    "flake-utils": {
+      "inputs": {
+        "systems": "systems"
+      },
+      "locked": {
+        "lastModified": 1710146030,
+        "narHash": "sha256-SZ5L6eA7HJ/nmkzGG7/ISclqe6oZdOZTNoesiInkXPQ=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "b1d9ab70662946ef0850d488da1c9019f3a9752a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "flake-utils_2": {
+      "inputs": {
+        "systems": "systems_2"
+      },
+      "locked": {
+        "lastModified": 1710146030,
+        "narHash": "sha256-SZ5L6eA7HJ/nmkzGG7/ISclqe6oZdOZTNoesiInkXPQ=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "b1d9ab70662946ef0850d488da1c9019f3a9752a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1720885630,
+        "narHash": "sha256-kpcZRxvcEj79uwFvZECGRMEE2mATqFqbo9WNuDi3d/w=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "9511aa192f5f25769e0768ad5b0d8c5408fbfefb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1720886675,
+        "narHash": "sha256-QNa/30Ok0jZNL1NtCwKRu0o4zZLMg5QVYh2uk1Sv4OU=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "4c68bf5473a8e87ffd94322cc3e79a449311325b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "examples": "examples",
+        "flake-utils": "flake-utils",
+        "nixpkgs": "nixpkgs",
+        "sdk": "sdk"
+      }
+    },
+    "sdk": {
+      "inputs": {
+        "flake-utils": "flake-utils_2",
+        "nixpkgs": "nixpkgs_2",
+        "sdk": "sdk_2"
+      },
+      "locked": {
+        "dir": "pico-sdk",
+        "lastModified": 1720887275,
+        "narHash": "sha256-lOXjCdGXsx2Raa9d4eJ0wPDgMWuO7zpmnV1X+Uz7w3o=",
+        "owner": "Rellikeht",
+        "repo": "nix-builds",
+        "rev": "600db2b4751bbf6182afe669aaf6cc8e1447fef2",
+        "type": "github"
+      },
+      "original": {
+        "dir": "pico-sdk",
+        "owner": "Rellikeht",
+        "repo": "nix-builds",
+        "type": "github"
+      }
+    },
+    "sdk_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1686695253,
+        "narHash": "sha256-JNcxd86XNNiPkvipVFR3X255boMmq+YcuJXUP4JwInU=",
+        "owner": "raspberrypi",
+        "repo": "pico-sdk",
+        "rev": "6a7db34ff63345a7badec79ebea3aaef1712f374",
+        "type": "github"
+      },
+      "original": {
+        "owner": "raspberrypi",
+        "repo": "pico-sdk",
+        "type": "github"
+      }
+    },
+    "systems": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    },
+    "systems_2": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
