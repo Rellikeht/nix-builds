@@ -11,8 +11,8 @@
       url = "github:numtide/flake-utils";
     };
 
-    sdk = {
-      url = "github:Rellikeht/nix-builds?dir=pico-sdk";
+    builds = {
+      url = "github:Rellikeht/nix-builds";
     };
 
     examples = {
@@ -26,29 +26,34 @@
     self,
     nixpkgs,
     flake-utils,
-    sdk,
     examples,
+    builds,
     # }}}
   } @ inputs:
     flake-utils.lib.eachDefaultSystem (
       system: let
+        # {{{
         pkgs = nixpkgs.legacyPackages.${system};
-        sdk-pkg = sdk.packages.${system}.default;
-        gcc = pkgs.gcc-arm-embedded;
+        sdk-pkg = builds.packages.${system}.pico-sdk;
+        cc = pkgs.gcc-arm-embedded;
+        # }}}
       in rec {
         packages.default = pkgs.stdenv.mkDerivation {
           # {{{
 
+          # {{{
           name = "pico-examples";
           src = examples;
           PICO_SDK_PATH = "${sdk-pkg}/lib/pico-sdk";
+          # }}}
 
           phases = [
+            # {{{
             "unpackPhase"
             "configurePhase"
             "buildPhase"
             "installPhase"
-          ];
+          ]; # }}}
 
           nativeBuildInputs = with pkgs;
             [
@@ -57,22 +62,28 @@
               python312
             ] # }}}
             ++ [
-              gcc
-            ];
+              # {{{
+              cc
+            ]; # }}}
 
           cmakeFlags = [
-            "-D CMAKE_C_COMPILER=${gcc}/bin/arm-none-eabi-gcc"
-            "-D CMAKE_CXX_COMPILER=${gcc}/bin/arm-none-eabi-g++"
-          ];
+            # {{{
+            "-D CMAKE_C_COMPILER=${cc}/bin/arm-none-eabi-gcc"
+            "-D CMAKE_CXX_COMPILER=${cc}/bin/arm-none-eabi-g++"
+          ]; # }}}
 
-          installPhase = ''
-            mkdir -p $out
-            cp -r * $out
-            rm -rf $out/Makefile
-            rm -rf $out/cmake_install.cmake
-            rm -rf $out/pico-sdk
-            # rm -rf $out/pioasm
-          '';
+          installPhase =
+            # {{{
+            ''
+              mkdir -p $out
+              cp -r * $out
+              rm -rf $out/Makefile
+              rm -rf $out/cmake_install.cmake
+              rm -rf $out/pico-sdk
+
+              # ?
+              # rm -rf $out/pioasm
+            ''; # }}}
 
           # }}}
         };
