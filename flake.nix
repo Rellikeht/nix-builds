@@ -23,22 +23,8 @@
     breeze-hacked.url = "github:Rellikeht/nix-builds?dir=breeze-hacked";
     xinit-xsession.url = "github:Rellikeht/nix-builds?dir=xinit-xsession";
 
-    # chuffed.url = "path:chuffed";
-    # minizinc.url = "path:minizinc";
-    # playit.url = "path:playit";
-
-    # # playit-bin.url = "path:playit-bin";
-    # playit-bin = {
-    #   # url = "path:playit-bin";
-    #   # path = "./playit-bin";
-    #   url = "git+file:.?dir=playit-bin";
-    # };
-
-    # scheme-langserver-bin.url = "path:scheme-langserver-bin";
-    # minizinc-ide-bin.url = "path:minizinc-ide-bin";
-
-    # breeze-hacked.url = "path:breeze-hacked";
-    # xinit-xsession.url = "path:xinit-xsession";
+    pico-sdk.url = "github:Rellikeht/nix-builds?dir=pico-sdk";
+    pico-examples.url = "github:Rellikeht/nix-builds?dir=pico-examples";
   }; # }}}
 
   outputs = inputs @ {
@@ -59,6 +45,8 @@
     minizinc-ide-bin,
     breeze-hacked,
     xinit-xsession,
+    pico-sdk,
+    pico-examples,
   }:
   # }}}
   let
@@ -100,10 +88,14 @@
 
         breeze-hacked = getDef breeze-hacked;
         xinit-xsession = getDef xinit-xsession;
+
+        pico-sdk = getDef pico-sdk;
+        pico-examples = getDef pico-examples;
       }; # }}}
     });
 
     packagesL64 =
+      # {{{
       (let
         getDef = getDefS l64;
       in {
@@ -111,9 +103,9 @@
         scheme-langserver-bin = getDef scheme-langserver-bin;
       })
       // packagesMulti.packages.${l64};
-    packages =
-      (packagesMulti.packages)
-      // {${l64} = packagesL64;};
+    # }}}
+
+    packages = (packagesMulti.packages) // {${l64} = packagesL64;};
   in {
     inherit packages;
     utils = {
