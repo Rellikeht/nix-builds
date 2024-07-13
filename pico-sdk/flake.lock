@@ -1,6 +1,6 @@
 {
   "nodes": {
-    "flakeUtils": {
+    "flake-utils": {
       "inputs": {
         "systems": "systems"
       },
@@ -20,24 +20,40 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1713145326,
-        "narHash": "sha256-m7+IWM6mkWOg22EC5kRUFCycXsXLSU7hWmHdmBfmC3s=",
+        "lastModified": 1720886675,
+        "narHash": "sha256-QNa/30Ok0jZNL1NtCwKRu0o4zZLMg5QVYh2uk1Sv4OU=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "53a2c32bc66f5ae41a28d7a9a49d321172af621e",
+        "rev": "4c68bf5473a8e87ffd94322cc3e79a449311325b",
         "type": "github"
       },
       "original": {
         "owner": "NixOS",
-        "ref": "nixos-23.11",
         "repo": "nixpkgs",
         "type": "github"
       }
     },
     "root": {
       "inputs": {
-        "flakeUtils": "flakeUtils",
-        "nixpkgs": "nixpkgs"
+        "flake-utils": "flake-utils",
+        "nixpkgs": "nixpkgs",
+        "sdk": "sdk"
+      }
+    },
+    "sdk": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1686695253,
+        "narHash": "sha256-JNcxd86XNNiPkvipVFR3X255boMmq+YcuJXUP4JwInU=",
+        "owner": "raspberrypi",
+        "repo": "pico-sdk",
+        "rev": "6a7db34ff63345a7badec79ebea3aaef1712f374",
+        "type": "github"
+      },
+      "original": {
+        "owner": "raspberrypi",
+        "repo": "pico-sdk",
+        "type": "github"
       }
     },
     "systems": {

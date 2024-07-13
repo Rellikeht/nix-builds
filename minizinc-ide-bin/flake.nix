@@ -6,7 +6,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs";
     flakeUtils.url = "github:numtide/flake-utils";
     pkg-linux-x64 = {
-      url = "https://github.com/MiniZinc/MiniZincIDE/releases/download/2.8.4/MiniZincIDE-2.8.4-bundle-linux-x86_64.tgz";
+      url = "https://github.com/MiniZinc/MiniZincIDE/releases/download/2.8.5/MiniZincIDE-2.8.5-bundle-linux-x86_64.tgz";
       flake = false;
     };
   };
@@ -23,7 +23,7 @@
     flib.eachSystem systems (system: let
       pkgs = nixpkgs.legacyPackages.${system};
       lib = pkgs.lib;
-      name = "minizinc-ide-bin";
+      name = "minizinc-ide-bin-2.8.5";
       src = pkg-linux-x64;
     in {
       packages = {
@@ -69,7 +69,7 @@
           meta = with lib; {
             homepage = "https://www.minizinc.org/ide/";
             description = "Binary build of minizinc ide with solvers built in";
-            # license = licenses.gpl3; # ???
+            license = licenses.mpl2;
             mainProgram = "minizinc";
             maintainers = ["Rellikeht"];
             platforms = platforms.linux;
