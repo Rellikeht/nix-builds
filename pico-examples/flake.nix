@@ -1,4 +1,6 @@
 {
+  description = "Raspberry Pi Pico examples";
+
   inputs = {
     # {{{
     nixpkgs = {
@@ -69,7 +71,7 @@
             rm -rf $out/Makefile
             rm -rf $out/cmake_install.cmake
             rm -rf $out/pico-sdk
-            rm -rf $out/pioasm
+            # rm -rf $out/pioasm
           '';
 
           # }}}

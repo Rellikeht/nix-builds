@@ -10,8 +10,10 @@
     };
 
     sdk = {
-      url = "github:raspberrypi/pico-sdk?submodule=1";
+      url = "https://github.com/raspberrypi/pico-sdk";
       flake = false;
+      type = "git";
+      submodules = true;
     };
   }; # }}}
 
@@ -60,6 +62,11 @@
           # {{{
           name = "pico-sdk";
           src = "${sdk}";
+
+          phases = [
+            "unpackPhase"
+            "installPhase"
+          ];
 
           installPhase = ''
             mkdir -p $out/lib/pico-sdk
