@@ -33,10 +33,23 @@
         "type": "github"
       }
     },
+    "pinout": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-Aikbi317COBedPgVe090WwaSrRuTPYHEnOS9nohBNDQ=",
+        "type": "file",
+        "url": "https://gabmus.org/pico_pinout"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://gabmus.org/pico_pinout"
+      }
+    },
     "root": {
       "inputs": {
         "flake-utils": "flake-utils",
         "nixpkgs": "nixpkgs",
+        "pinout": "pinout",
         "sdk": "sdk"
       }
     },
