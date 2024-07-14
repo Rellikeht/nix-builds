@@ -179,7 +179,7 @@
               cp ${packages.pico-mount}/bin/pico-mount $out/bin
               cp ${packages.pico-load}/bin/pico-load $out/bin
               cp ${packages.pico-pinout}/bin/pico-pinout $out/bin
-              cp ${packages.pico-pinout}/bin/pico-build $out/bin
+              cp ${packages.pico-build}/bin/pico-build $out/bin
             ''; # }}}
 
           #
