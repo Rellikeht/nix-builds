@@ -101,7 +101,7 @@
               screen
             ]
             ++ [
-              packages.${system}.default
+              packages.default
             ];
 
           shellHook = ''
