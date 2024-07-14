@@ -25,6 +25,8 @@
 
     pico-sdk.url = "github:Rellikeht/nix-builds?dir=pico-sdk";
     pico-examples.url = "github:Rellikeht/nix-builds?dir=pico-examples";
+
+    #
   }; # }}}
 
   outputs = inputs @ {
@@ -51,27 +53,16 @@
   # }}}
   let
     # {{{
-    systems = ["x86_64-linux" "aarch64-linux"];
+    b = builtins;
+    # systems = ["x86_64-linux" "aarch64-linux"];
     getDefS = system: pkg: pkg.packages.${system}.default;
     l64 = "x86_64-linux";
     # }}}
-    # TODO fuck this shit
-    # pkgInputs = builtins.tail (builtins.tail (builtins.tail inputs));
 
-    packagesMulti = flakeUtils.lib.eachSystem systems (system: let
-      # pkgs = nixpkgs.legacyPackages.${system};
-      # lib = pkgs.lib;
+    # packagesMulti = flakeUtils.lib.eachSystem systems (system: let
+    packagesMulti = flakeUtils.lib.eachDefaultSystem (system: let
       getDef = getDefS system;
-      # packages = builtins.listToAttrs (builtins.map
-      #   (name: {
-      #     inherit name;
-      #     value = getDef name;
-      #   })
-      #   pkgInputs);
     in {
-      # inherit packages;
-      # });
-
       packages = {
         # {{{
         dwm = getDef dwm;
@@ -112,14 +103,3 @@
     };
   };
 }
-# packages = flakeUtils.lib.eachSystem systems (system: let
-#   packages = (
-#     builtins.listToAttrs (builtins.map
-#       (name: {
-#         inherit name;
-#         value = getDefS system name;
-#       })
-#       pkgInputs)
-#   );
-# in (builtins.trace packages packages));
-

@@ -2678,11 +2678,11 @@
       },
       "locked": {
         "dir": "pico-sdk",
-        "lastModified": 1720949338,
-        "narHash": "sha256-cMimm82B5LPf3A3ZRcUaDv2yBVCQuANzzd/nUl9kjX8=",
+        "lastModified": 1720949364,
+        "narHash": "sha256-f+FxGN76zIl/V4jUhvekMrKKXeUBaIEBSWbWj7WGfqg=",
         "owner": "Rellikeht",
         "repo": "nix-builds",
-        "rev": "1e3e8f89a36757905830b028e32230598e18dbba",
+        "rev": "40c885fa5d96e69615b6216c0a2cb9f1ee447511",
         "type": "github"
       },
       "original": {
