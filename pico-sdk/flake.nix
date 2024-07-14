@@ -214,32 +214,44 @@
         #
       }; # }}}
 
-      devShells.default = with pkgs;
-        mkShell {
-          # {{{
-          buildInputs = with pkgs;
-            [
-              # {{{
-              cmake
-              gcc-arm-embedded
-              libusb1
-              openocd
-              picotool
-              screen
-
-              # without that nix exports noninteractive version
-              bashInteractive
-
-              bear
-            ] # }}}
-            ++ [packages.default];
-
-          shellHook =
+      devShells.default = let
+        # {{{
+        cc = pkgs.gcc-arm-embedded;
+        # }}}
+      in
+        with pkgs;
+          mkShell rec {
             # {{{
-            ''
-              export PICO_SDK_PATH="${packages.default}/lib/pico-sdk"
+            buildInputs = with pkgs;
+              [
+                # {{{
+                cmake
+                libusb1
+                openocd
+                picotool
+                screen
+
+                # without that nix exports noninteractive version
+                bashInteractive
+
+                clang-tools
+              ] # }}}
+              ++ [
+                # {{{
+                packages.default
+                cc
+              ]; # }}}
+
+            shellHook =
+              # {{{
+              ''
+                export PICO_SDK_PATH="${packages.default}/lib/pico-sdk"
                 export PICO_SDK_BIN="${packages.default}/bin"
-            ''; # }}}
-        }; # }}}
+                export CC=${cc}/bin/arm-none-eabi-gcc
+
+                # Clangd refuses to fully cooperate
+                # export CPATH="$CPATH:${packages.default}/lib/pico-sdk/**:${gcc}/**"
+              ''; # }}}
+          }; # }}}
     });
 }
