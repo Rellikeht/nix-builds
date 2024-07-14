@@ -229,6 +229,8 @@
 
               # without that nix exports noninteractive version
               bashInteractive
+
+              bear
             ] # }}}
             ++ [packages.default];
 
