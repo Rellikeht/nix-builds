@@ -135,6 +135,30 @@
             less --quit-if-one-screen --raw-control-chars ${pinout}
           ''; # }}}
 
+        pico-build =
+          pkgs.writeScriptBin "pico-build"
+          # {{{
+          ''
+            #!${pkgs.dash}/bin/dash
+
+            mkdir -p build
+            mkdir -p bin
+            cd build
+            cmake ..
+            make -j
+            cp *.uf2 ../bin
+          ''; # }}}
+
+        # # Magical workaround
+        # sh = pkgs.symlinkJoin {
+        #   # {{{
+        #   name = "sh";
+        #   paths = [pkgs.dash];
+        #   postBuild = ''
+        #     ln -s $out/bin/dash $out/bin/sh
+        #   '';
+        # }; # }}}
+
         default = pkgs.stdenv.mkDerivation {
           # {{{
           name = "pico-sdk";
@@ -155,6 +179,7 @@
               cp ${packages.pico-mount}/bin/pico-mount $out/bin
               cp ${packages.pico-load}/bin/pico-load $out/bin
               cp ${packages.pico-pinout}/bin/pico-pinout $out/bin
+              cp ${packages.pico-pinout}/bin/pico-build $out/bin
             ''; # }}}
 
           #
@@ -181,6 +206,11 @@
           program = "${packages.pico-pinout}/bin/pico-pinout";
         };
 
+        pico-build = {
+          type = "app";
+          program = "${packages.pico-build}/bin/pico-build";
+        };
+
         #
       }; # }}}
 
@@ -189,6 +219,7 @@
           # {{{
           buildInputs = with pkgs;
             [
+              # {{{
               cmake
               gcc-arm-embedded
               libusb1
@@ -198,14 +229,15 @@
 
               # without that nix exports noninteractive version
               bashInteractive
-            ]
-            ++ [
-              packages.default
-            ];
+            ] # }}}
+            ++ [packages.default];
 
-          shellHook = ''
-            export PICO_SDK_PATH="${packages.default}/lib/pico-sdk"
-          '';
+          shellHook =
+            # {{{
+            ''
+              export PICO_SDK_PATH="${packages.default}/lib/pico-sdk"
+                export PICO_SDK_BIN="${packages.default}/bin"
+            ''; # }}}
         }; # }}}
     });
 }
