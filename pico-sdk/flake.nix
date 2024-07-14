@@ -194,8 +194,10 @@
               libusb1
               openocd
               picotool
-
               screen
+
+              # without that nix exports noninteractive version
+              bashInteractive
             ]
             ++ [
               packages.default

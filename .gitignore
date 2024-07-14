@@ -1,5 +1,4 @@
-# Probably temporary solution
-#result
+result
 *
 !*.*
 !*/
@@ -10,13 +9,7 @@
 *.zip
 *.so
 
-#*.lock
-
-# Definitely temporary solution
-xp-pen*/XP*
 breeze-hacked-cursor-theme/
 !chuffed
 minizinc*bin/Mini*
 !xinitrcsession*
-
-#!./*
