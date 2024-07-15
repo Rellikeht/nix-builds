@@ -11,10 +11,6 @@
       url = "github:numtide/flake-utils";
     };
 
-    # builds = {
-    #   url = "github:Rellikeht/nix-builds";
-    # };
-
     sdk = {
       url = "github:Rellikeht/nix-builds?dir=pico-sdk";
     };
@@ -32,30 +28,30 @@
     flake-utils,
     examples,
     sdk,
-    # builds,
     # }}}
   } @ inputs:
     flake-utils.lib.eachDefaultSystem (
       system: let
         # {{{
         pkgs = nixpkgs.legacyPackages.${system};
-        # sdk-pkg = builds.packages.${system}.pico-sdk;
-        sdk-pkg = sdk.packages.${system}.pico-sdk;
+        sdk-pkg = sdk.packages.${system}.default;
         cc = pkgs.gcc-arm-embedded;
         # }}}
-      in rec {
-        packages.default = pkgs.stdenv.mkDerivation {
+      in {
+        packages.default = pkgs.stdenv.mkDerivation rec {
           # {{{
 
           # {{{
           name = "pico-examples";
           src = examples;
           PICO_SDK_PATH = "${sdk-pkg}/lib/pico-sdk";
+          PICO_SDK_BIN = "${sdk-pkg}/bin";
           # }}}
 
           phases = [
             # {{{
             "unpackPhase"
+            "patchPhase"
             "configurePhase"
             "buildPhase"
             "installPhase"
@@ -78,6 +74,12 @@
             "-D CMAKE_CXX_COMPILER=${cc}/bin/arm-none-eabi-g++"
           ]; # }}}
 
+          patchPhase =
+            # {{{
+            ''
+              patch CMakeLists.txt < ${self}/CMakeLists.patch
+            ''; # }}}
+
           installPhase =
             # {{{
             ''
@@ -86,9 +88,7 @@
               rm -rf $out/Makefile
               rm -rf $out/cmake_install.cmake
               rm -rf $out/pico-sdk
-
-              # ?
-              # rm -rf $out/pioasm
+              rm -rf $out/CMakeCache.txt
             ''; # }}}
 
           # }}}
