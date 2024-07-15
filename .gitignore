@@ -19,3 +19,4 @@ minizinc*bin/Mini*
 bin/
 build/
 result
+.cache
