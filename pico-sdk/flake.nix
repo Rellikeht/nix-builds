@@ -83,7 +83,7 @@
             fi
 
             if [ -d "$PICO_DIR" ]; then
-              if find -mindepth 1 "$PICO_DIR" | grep -E '.' >/dev/null
+              if find "$PICO_DIR" -mindepth 1 | grep -E '.' >/dev/null
               then
                 echo "$PICO_DIR" must not be empty
               fi
