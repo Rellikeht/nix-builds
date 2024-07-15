@@ -79,12 +79,20 @@
 
             PICO_DIR=/mnt/pico
             if [ -n "$1" ]; then
-              if [ -d "$1" ]; then
-                PICO_DIR="$1"
-              else
-                echo "$1" is not a directory
-                exit 1
+              PICO_DIR="$1"
+            fi
+
+            if [ -d "$PICO_DIR" ]; then
+              if find -mindepth 1 "$PICO_DIR" | grep -E '.' >/dev/null
+              then
+                echo "$PICO_DIR" must not be empty
               fi
+            elif ! [ -e "$PICO_DIR" ]; then
+              echo "$PICO_DIR doesn't exist, creating"
+              mkdir -p "$PICO_DIR"
+            else
+              echo "$PICO_DIR" is not a directory
+              exit 1
             fi
 
             find /dev/ -name 'sd?1' |
@@ -103,10 +111,10 @@
               exit 1
             fi
 
-            if [ -z "$1" ];
+            if [ -z "$1" ]; then
               echo You need to specify program to load
               exit 1
-            elif [ "$1" != "uf2" ]
+            elif [ "''${1#*.}" != "uf2" ]; then
               echo Is the format of "$1" correct?
               exit 1
             fi

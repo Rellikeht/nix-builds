@@ -11,8 +11,12 @@
       url = "github:numtide/flake-utils";
     };
 
-    builds = {
-      url = "github:Rellikeht/nix-builds";
+    # builds = {
+    #   url = "github:Rellikeht/nix-builds";
+    # };
+
+    sdk = {
+      url = "github:Rellikeht/nix-builds?dir=pico-sdk";
     };
 
     examples = {
@@ -27,14 +31,16 @@
     nixpkgs,
     flake-utils,
     examples,
-    builds,
+    sdk,
+    # builds,
     # }}}
   } @ inputs:
     flake-utils.lib.eachDefaultSystem (
       system: let
         # {{{
         pkgs = nixpkgs.legacyPackages.${system};
-        sdk-pkg = builds.packages.${system}.pico-sdk;
+        # sdk-pkg = builds.packages.${system}.pico-sdk;
+        sdk-pkg = sdk.packages.${system}.pico-sdk;
         cc = pkgs.gcc-arm-embedded;
         # }}}
       in rec {
