@@ -2,8 +2,8 @@
   description = "~/.xinitrc can now run as xsession";
 
   inputs = {
-    nixpkgs.url = github:NixOS/nixpkgs;
-    flakeUtils.url = github:numtide/flake-utils;
+    nixpkgs.url = "github:NixOS/nixpkgs";
+    flakeUtils.url = "github:numtide/flake-utils";
   };
 
   outputs = {
@@ -48,5 +48,6 @@
           };
         };
       };
+      passthrough.providedSessions = ["xinitrc"];
     });
 }

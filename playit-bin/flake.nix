@@ -7,25 +7,25 @@
 
     # Shit is statically linked
     pkg-linux-x64 = {
-      url = "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.13/playit-linux-amd64";
+      url = "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.19/playit-linux-amd64";
       type = "file";
       flake = false;
     };
 
     pkg-linux-x86 = {
-      url = "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.13/playit-linux-i686";
+      url = "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.19/playit-linux-i686";
       type = "file";
       flake = false;
     };
 
     pkg-linux-a64 = {
-      url = "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.13/playit-linux-aarch64";
+      url = "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.19/playit-linux-aarch64";
       type = "file";
       flake = false;
     };
 
     pkg-linux-a32 = {
-      url = "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.13/playit-linux-armv7";
+      url = "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.19/playit-linux-armv7";
       type = "file";
       flake = false;
     };

@@ -13,6 +13,7 @@
 
     sdk = {
       url = "github:Rellikeht/nix-builds?dir=pico-sdk";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     examples = {

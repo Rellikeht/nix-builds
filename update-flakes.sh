@@ -13,7 +13,7 @@ sed -nEz 's/(.*)(outputs = \{[^}]*\n)( *}:.*)/\2/p' flake.nix |
         $NIX flake lock
     "
 
-rm flake.lock
-nix flake update
-nix flake lock
-git add .
+# rm flake.lock
+# nix flake update
+# nix flake lock
+# git add .

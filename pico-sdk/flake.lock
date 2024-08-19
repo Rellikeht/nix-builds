@@ -20,11 +20,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1721033835,
-        "narHash": "sha256-HVJbg3x559U8pFiXShdUJZZisfSFyu5z6BXmMuBkejc=",
+        "lastModified": 1724058148,
+        "narHash": "sha256-Tb62vwxuhP5jL+QTJNois/MNRmBXxcnH+5Q4wOrHhnc=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "709f544df6f8391df5405ba3b5990bf6a891c270",
+        "rev": "367b266dae7292d0d4d23d521fdcf5458d31c40e",
         "type": "github"
       },
       "original": {
@@ -56,11 +56,11 @@
     "sdk": {
       "flake": false,
       "locked": {
-        "lastModified": 1686695253,
-        "narHash": "sha256-GY5jjJzaENL3ftuU5KpEZAmEZgyFRtLwGVg3W1e/4Ho=",
+        "lastModified": 1723125278,
+        "narHash": "sha256-fVSpBVmjeP5pwkSPhhSCfBaEr/FEtA82mQOe/cHFh0A=",
         "ref": "refs/heads/master",
-        "rev": "6a7db34ff63345a7badec79ebea3aaef1712f374",
-        "revCount": 741,
+        "rev": "efe2103f9b28458a1615ff096054479743ade236",
+        "revCount": 828,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/raspberrypi/pico-sdk"
