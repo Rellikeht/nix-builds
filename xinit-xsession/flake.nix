@@ -38,6 +38,7 @@
             cp $src/xinitrcsession-helper $out/bin
             cp $src/xinitrc.desktop ${sesDir}
           '';
+          passthru.providedSessions = ["xinitrc"];
 
           meta = with pkgs.lib; {
             homepage = "https://aur.archlinux.org/packages/xinit-xsession";
@@ -48,6 +49,5 @@
           };
         };
       };
-      passthru.providedSessions = ["xinitrc"];
     });
 }
