@@ -3,11 +3,11 @@
     "examples": {
       "flake": false,
       "locked": {
-        "lastModified": 1720716757,
-        "narHash": "sha256-pw2N2t0/92CAPIKFhy0FiSk5jO2Ju0awJzZAPdMeOL4=",
+        "lastModified": 1723127062,
+        "narHash": "sha256-RslSYduxsm3caaD1dLvNHsQYopUR3kNKzFGb1+0CRfU=",
         "owner": "raspberrypi",
         "repo": "pico-examples",
-        "rev": "e32ee9ec701e3a64099fb41547da69e97d210483",
+        "rev": "7fe60d6b4027771e45d97f207532c41b1d8c5418",
         "type": "github"
       },
       "original": {
@@ -54,26 +54,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1721045582,
-        "narHash": "sha256-G38S3nSbd9X24ZbEMuWXuGEDEmlMHAQmHirxaGn9Ueo=",
+        "lastModified": 1724058694,
+        "narHash": "sha256-6NQFErG/FJ1IXW2HPCKr439WLmc13nkx4p5LIQOH4eM=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "063ad6c3b6648cd41d5007bdc502b65c7c52f847",
-        "type": "github"
-      },
-      "original": {
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
-    "nixpkgs_2": {
-      "locked": {
-        "lastModified": 1721033835,
-        "narHash": "sha256-HVJbg3x559U8pFiXShdUJZZisfSFyu5z6BXmMuBkejc=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "709f544df6f8391df5405ba3b5990bf6a891c270",
+        "rev": "ca17c446da9fca6379364f408edd66949e1058f5",
         "type": "github"
       },
       "original": {
@@ -105,17 +90,19 @@
     "sdk": {
       "inputs": {
         "flake-utils": "flake-utils_2",
-        "nixpkgs": "nixpkgs_2",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
         "pinout": "pinout",
         "sdk": "sdk_2"
       },
       "locked": {
         "dir": "pico-sdk",
-        "lastModified": 1721045694,
-        "narHash": "sha256-WO5pbTHkFFFZ4zeUwu7WUARWR08r1P5QTRNipQROdPY=",
+        "lastModified": 1724058897,
+        "narHash": "sha256-qe3OLxyZDvqxJlP0QkhkTNoOh5gt5WS3RRneFl/l944=",
         "owner": "Rellikeht",
         "repo": "nix-builds",
-        "rev": "1e612d9cae117cbfe5b2faf87f1537600cee2941",
+        "rev": "a31f0467b51105845f4228ec5069868aeab36a81",
         "type": "github"
       },
       "original": {
@@ -128,11 +115,11 @@
     "sdk_2": {
       "flake": false,
       "locked": {
-        "lastModified": 1686695253,
-        "narHash": "sha256-GY5jjJzaENL3ftuU5KpEZAmEZgyFRtLwGVg3W1e/4Ho=",
+        "lastModified": 1723125278,
+        "narHash": "sha256-fVSpBVmjeP5pwkSPhhSCfBaEr/FEtA82mQOe/cHFh0A=",
         "ref": "refs/heads/master",
-        "rev": "6a7db34ff63345a7badec79ebea3aaef1712f374",
-        "revCount": 741,
+        "rev": "efe2103f9b28458a1615ff096054479743ade236",
+        "revCount": 828,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/raspberrypi/pico-sdk"
