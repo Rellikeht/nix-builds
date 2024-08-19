@@ -54,11 +54,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1724058694,
-        "narHash": "sha256-6NQFErG/FJ1IXW2HPCKr439WLmc13nkx4p5LIQOH4eM=",
+        "lastModified": 1724059442,
+        "narHash": "sha256-SB7NDK4Udg5bxgyaT2VlGEGOdy/sdGei5MFIanJc2/0=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "ca17c446da9fca6379364f408edd66949e1058f5",
+        "rev": "6cb5757dce96718ad47108f0a5a3ff1b2b9b96c2",
         "type": "github"
       },
       "original": {
@@ -98,11 +98,11 @@
       },
       "locked": {
         "dir": "pico-sdk",
-        "lastModified": 1724058897,
-        "narHash": "sha256-qe3OLxyZDvqxJlP0QkhkTNoOh5gt5WS3RRneFl/l944=",
+        "lastModified": 1724060162,
+        "narHash": "sha256-hWHyqaUndtbnUsRKbluS1LazoCliRoQhzeqNjQmVOLo=",
         "owner": "Rellikeht",
         "repo": "nix-builds",
-        "rev": "a31f0467b51105845f4228ec5069868aeab36a81",
+        "rev": "96f941fa035bde7e05f0301306a126516256960c",
         "type": "github"
       },
       "original": {
