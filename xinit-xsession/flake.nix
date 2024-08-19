@@ -48,6 +48,6 @@
           };
         };
       };
-      passthrough.providedSessions = ["xinitrc"];
+      passthru.providedSessions = ["xinitrc"];
     });
 }
