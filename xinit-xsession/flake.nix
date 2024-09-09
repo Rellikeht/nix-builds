@@ -39,6 +39,8 @@
             cp $src/xinitrc.desktop ${sesDir}
           '';
 
+          passthru.providedSessions = ["xinitrc"];
+
           meta = with pkgs.lib; {
             homepage = "https://aur.archlinux.org/packages/xinit-xsession";
             description = "~/.xinitrc can now run as xsession";
