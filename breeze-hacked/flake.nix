@@ -2,10 +2,10 @@
   description = "Breeze hacked cursors";
 
   inputs = {
-    nixpkgs.url = github:NixOS/nixpkgs;
-    flakeUtils.url = github:numtide/flake-utils;
+    nixpkgs.url = "github:NixOS/nixpkgs";
+    flakeUtils.url = "github:numtide/flake-utils";
     package = {
-      url = github:clayrisser/breeze-hacked-cursor-theme;
+      url = "github:clayrisser/breeze-hacked-cursor-theme";
       flake = false;
     };
   };
@@ -40,17 +40,25 @@
             inkscape
             bat
             bash
+            python312
           ];
 
           # TODO more colors, yay
-          buildPhase = "
-            sed -i 's#./build.sh#bash build.sh#' Makefile
+          buildPhase = ''
+            sed -i "s#./build.py#python build.py#" Makefile
+            # shittiest workaround ever around fucking
+            # python couldn't simply read $PATH
+            sed -Ei "
+            s/import Popen, ?(.*)/import \1/
+            /from subprocess/aimport subprocess as subp\n\
+            Popen = lambda *args, **kwargs: subp.Popen(*args, **kwargs, shell=True)
+            " build.py
             make -j $NIX_BUILD_CORES build
-          ";
-          installPhase = "
+          '';
+          installPhase = ''
             mkdir -p ${iconsDir}
             cp -r Breeze_Hacked ${iconsDir}/
-          ";
+          '';
 
           meta = with lib; {
             homepage = "";
