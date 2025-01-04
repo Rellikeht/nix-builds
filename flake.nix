@@ -24,7 +24,7 @@
     xinit-xsession.url = "github:Rellikeht/nix-builds?dir=xinit-xsession";
 
     pico-sdk.url = "github:Rellikeht/nix-builds?dir=pico-sdk";
-    pico-examples.url = "github:Rellikeht/nix-builds?dir=pico-examples";
+    # pico-examples.url = "github:Rellikeht/nix-builds?dir=pico-examples";
 
     #
   }; # }}}
@@ -48,7 +48,7 @@
     breeze-hacked,
     xinit-xsession,
     pico-sdk,
-    pico-examples,
+    # pico-examples,
   }:
   # }}}
   let
@@ -81,7 +81,7 @@
         xinit-xsession = getDef xinit-xsession;
 
         pico-sdk = getDef pico-sdk;
-        pico-examples = getDef pico-examples;
+        # pico-examples = getDef pico-examples;
       }; # }}}
     });
 
