@@ -8,11 +8,11 @@
       },
       "locked": {
         "dir": "breeze-hacked",
-        "lastModified": 1739008911,
-        "narHash": "sha256-3dRxRvCi+zLpAXLhe6kCtmGaffQ1wRY4s7tG4s6CT8Q=",
+        "lastModified": 1739008955,
+        "narHash": "sha256-nzdS4E7lWWluiom/e87HwwTprSBlJ1tRIWsP4rF0ufA=",
         "owner": "Rellikeht",
         "repo": "nix-builds",
-        "rev": "29790699ca101b8c72a186e3701d284ba635867c",
+        "rev": "c3cf369f578c2ca1eee748895f3aa321a80ead78",
         "type": "github"
       },
       "original": {
@@ -30,11 +30,11 @@
       },
       "locked": {
         "dir": "chuffed",
-        "lastModified": 1739008911,
-        "narHash": "sha256-3dRxRvCi+zLpAXLhe6kCtmGaffQ1wRY4s7tG4s6CT8Q=",
+        "lastModified": 1739008955,
+        "narHash": "sha256-nzdS4E7lWWluiom/e87HwwTprSBlJ1tRIWsP4rF0ufA=",
         "owner": "Rellikeht",
         "repo": "nix-builds",
-        "rev": "29790699ca101b8c72a186e3701d284ba635867c",
+        "rev": "c3cf369f578c2ca1eee748895f3aa321a80ead78",
         "type": "github"
       },
       "original": {
@@ -401,11 +401,11 @@
       },
       "locked": {
         "dir": "minizinc",
-        "lastModified": 1739008911,
-        "narHash": "sha256-3dRxRvCi+zLpAXLhe6kCtmGaffQ1wRY4s7tG4s6CT8Q=",
+        "lastModified": 1739008955,
+        "narHash": "sha256-nzdS4E7lWWluiom/e87HwwTprSBlJ1tRIWsP4rF0ufA=",
         "owner": "Rellikeht",
         "repo": "nix-builds",
-        "rev": "29790699ca101b8c72a186e3701d284ba635867c",
+        "rev": "c3cf369f578c2ca1eee748895f3aa321a80ead78",
         "type": "github"
       },
       "original": {
@@ -423,11 +423,11 @@
       },
       "locked": {
         "dir": "minizinc-ide-bin",
-        "lastModified": 1739008911,
-        "narHash": "sha256-3dRxRvCi+zLpAXLhe6kCtmGaffQ1wRY4s7tG4s6CT8Q=",
+        "lastModified": 1739008955,
+        "narHash": "sha256-nzdS4E7lWWluiom/e87HwwTprSBlJ1tRIWsP4rF0ufA=",
         "owner": "Rellikeht",
         "repo": "nix-builds",
-        "rev": "29790699ca101b8c72a186e3701d284ba635867c",
+        "rev": "c3cf369f578c2ca1eee748895f3aa321a80ead78",
         "type": "github"
       },
       "original": {
@@ -778,11 +778,11 @@
       },
       "locked": {
         "dir": "pico-sdk",
-        "lastModified": 1739008911,
-        "narHash": "sha256-3dRxRvCi+zLpAXLhe6kCtmGaffQ1wRY4s7tG4s6CT8Q=",
+        "lastModified": 1739008955,
+        "narHash": "sha256-nzdS4E7lWWluiom/e87HwwTprSBlJ1tRIWsP4rF0ufA=",
         "owner": "Rellikeht",
         "repo": "nix-builds",
-        "rev": "29790699ca101b8c72a186e3701d284ba635867c",
+        "rev": "c3cf369f578c2ca1eee748895f3aa321a80ead78",
         "type": "github"
       },
       "original": {
@@ -807,62 +807,62 @@
     "pkg-linux-a32": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-xykdXw4WvK5EQ9tOKllOrdWW8j11HlFUWQxTEjBa98s=",
+        "narHash": "sha256-7zPc5Uq+2aID88Ea4DPXGGtOqSHFqDnJdv/oublI/FQ=",
         "type": "file",
-        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.13/playit-linux-armv7"
+        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.26/playit-linux-armv7"
       },
       "original": {
         "type": "file",
-        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.13/playit-linux-armv7"
+        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.26/playit-linux-armv7"
       }
     },
     "pkg-linux-a64": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-6dCEjRw/TwUEmcoJzcGcgUj5KISjLFpx14N8tfs2HLI=",
+        "narHash": "sha256-SYJ1eOU/clsmn66vrH8rMf8vRDMuwOVj0+hnvzZ+8A8=",
         "type": "file",
-        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.13/playit-linux-aarch64"
+        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.26/playit-linux-aarch64"
       },
       "original": {
         "type": "file",
-        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.13/playit-linux-aarch64"
+        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.26/playit-linux-aarch64"
       }
     },
     "pkg-linux-x64": {
       "flake": false,
       "locked": {
-        "lastModified": 1717380604,
-        "narHash": "sha256-b05JR7QhbPTzZYOI5bxpEfipCJwf/peHxWUs3rFCN1Q=",
+        "lastModified": 1727858166,
+        "narHash": "sha256-QjI/S9KrAQq9ilYFCPEu0xdwlG1VjYHs1mXn5bcWNQs=",
         "type": "tarball",
-        "url": "https://github.com/MiniZinc/MiniZincIDE/releases/download/2.8.5/MiniZincIDE-2.8.5-bundle-linux-x86_64.tgz"
+        "url": "https://github.com/MiniZinc/MiniZincIDE/releases/download/2.8.7/MiniZincIDE-2.8.7-bundle-linux-x86_64.tgz"
       },
       "original": {
         "type": "tarball",
-        "url": "https://github.com/MiniZinc/MiniZincIDE/releases/download/2.8.5/MiniZincIDE-2.8.5-bundle-linux-x86_64.tgz"
+        "url": "https://github.com/MiniZinc/MiniZincIDE/releases/download/2.8.7/MiniZincIDE-2.8.7-bundle-linux-x86_64.tgz"
       }
     },
     "pkg-linux-x64_2": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-uU/jHFwxEmdd/YdfJkhZ0rDUkJJ/3T5vThsc4GNOqoE=",
+        "narHash": "sha256-NMxyP1KPNtkVbN83PRrpi3PAKdoysdM5imycxurLJSo=",
         "type": "file",
-        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.13/playit-linux-amd64"
+        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.26/playit-linux-amd64"
       },
       "original": {
         "type": "file",
-        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.13/playit-linux-amd64"
+        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.26/playit-linux-amd64"
       }
     },
     "pkg-linux-x86": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-K4KcIGmX8GF/NzaaOq8lte63SMXe0TH0tHYbeat08ww=",
+        "narHash": "sha256-7NR3zKfbwu5YlJ5H4U0AUZUqfG72Ha7HVrZQeSLVq3w=",
         "type": "file",
-        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.13/playit-linux-i686"
+        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.26/playit-linux-i686"
       },
       "original": {
         "type": "file",
-        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.13/playit-linux-i686"
+        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.26/playit-linux-i686"
       }
     },
     "playit": {
@@ -873,11 +873,11 @@
       },
       "locked": {
         "dir": "playit",
-        "lastModified": 1739008911,
-        "narHash": "sha256-3dRxRvCi+zLpAXLhe6kCtmGaffQ1wRY4s7tG4s6CT8Q=",
+        "lastModified": 1739008955,
+        "narHash": "sha256-nzdS4E7lWWluiom/e87HwwTprSBlJ1tRIWsP4rF0ufA=",
         "owner": "Rellikeht",
         "repo": "nix-builds",
-        "rev": "29790699ca101b8c72a186e3701d284ba635867c",
+        "rev": "c3cf369f578c2ca1eee748895f3aa321a80ead78",
         "type": "github"
       },
       "original": {
@@ -898,11 +898,11 @@
       },
       "locked": {
         "dir": "playit-bin",
-        "lastModified": 1739008911,
-        "narHash": "sha256-3dRxRvCi+zLpAXLhe6kCtmGaffQ1wRY4s7tG4s6CT8Q=",
+        "lastModified": 1739008955,
+        "narHash": "sha256-nzdS4E7lWWluiom/e87HwwTprSBlJ1tRIWsP4rF0ufA=",
         "owner": "Rellikeht",
         "repo": "nix-builds",
-        "rev": "29790699ca101b8c72a186e3701d284ba635867c",
+        "rev": "c3cf369f578c2ca1eee748895f3aa321a80ead78",
         "type": "github"
       },
       "original": {
@@ -940,11 +940,11 @@
       },
       "locked": {
         "dir": "scheme-langserver-bin",
-        "lastModified": 1739008911,
-        "narHash": "sha256-3dRxRvCi+zLpAXLhe6kCtmGaffQ1wRY4s7tG4s6CT8Q=",
+        "lastModified": 1739008955,
+        "narHash": "sha256-nzdS4E7lWWluiom/e87HwwTprSBlJ1tRIWsP4rF0ufA=",
         "owner": "Rellikeht",
         "repo": "nix-builds",
-        "rev": "29790699ca101b8c72a186e3701d284ba635867c",
+        "rev": "c3cf369f578c2ca1eee748895f3aa321a80ead78",
         "type": "github"
       },
       "original": {
@@ -1293,11 +1293,11 @@
       },
       "locked": {
         "dir": "xinit-xsession",
-        "lastModified": 1739008911,
-        "narHash": "sha256-3dRxRvCi+zLpAXLhe6kCtmGaffQ1wRY4s7tG4s6CT8Q=",
+        "lastModified": 1739008955,
+        "narHash": "sha256-nzdS4E7lWWluiom/e87HwwTprSBlJ1tRIWsP4rF0ufA=",
         "owner": "Rellikeht",
         "repo": "nix-builds",
-        "rev": "29790699ca101b8c72a186e3701d284ba635867c",
+        "rev": "c3cf369f578c2ca1eee748895f3aa321a80ead78",
         "type": "github"
       },
       "original": {
