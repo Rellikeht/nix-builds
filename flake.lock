@@ -8,11 +8,11 @@
       },
       "locked": {
         "dir": "chuffed",
-        "lastModified": 1741023537,
-        "narHash": "sha256-D7V4UOfwpot+oRDCwH05F8QD8h2dP+2bp7AiwgkOkQA=",
+        "lastModified": 1741023608,
+        "narHash": "sha256-neawmEn9meYuVeZvBCl9or8vjL0WQTOKTiBa8spDcQ0=",
         "owner": "Rellikeht",
         "repo": "nix-builds",
-        "rev": "f3cf02913036e6f8d760d5657992faa36b59d27c",
+        "rev": "4fdf4713b06e4764607e4314371e9b1c14228bae",
         "type": "github"
       },
       "original": {
@@ -361,11 +361,11 @@
       },
       "locked": {
         "dir": "minizinc",
-        "lastModified": 1741023537,
-        "narHash": "sha256-D7V4UOfwpot+oRDCwH05F8QD8h2dP+2bp7AiwgkOkQA=",
+        "lastModified": 1741023608,
+        "narHash": "sha256-neawmEn9meYuVeZvBCl9or8vjL0WQTOKTiBa8spDcQ0=",
         "owner": "Rellikeht",
         "repo": "nix-builds",
-        "rev": "f3cf02913036e6f8d760d5657992faa36b59d27c",
+        "rev": "4fdf4713b06e4764607e4314371e9b1c14228bae",
         "type": "github"
       },
       "original": {
@@ -383,11 +383,11 @@
       },
       "locked": {
         "dir": "minizinc-ide-bin",
-        "lastModified": 1741023537,
-        "narHash": "sha256-D7V4UOfwpot+oRDCwH05F8QD8h2dP+2bp7AiwgkOkQA=",
+        "lastModified": 1741023608,
+        "narHash": "sha256-neawmEn9meYuVeZvBCl9or8vjL0WQTOKTiBa8spDcQ0=",
         "owner": "Rellikeht",
         "repo": "nix-builds",
-        "rev": "f3cf02913036e6f8d760d5657992faa36b59d27c",
+        "rev": "4fdf4713b06e4764607e4314371e9b1c14228bae",
         "type": "github"
       },
       "original": {
@@ -707,11 +707,11 @@
       },
       "locked": {
         "dir": "pico-sdk",
-        "lastModified": 1741023537,
-        "narHash": "sha256-D7V4UOfwpot+oRDCwH05F8QD8h2dP+2bp7AiwgkOkQA=",
+        "lastModified": 1741023608,
+        "narHash": "sha256-neawmEn9meYuVeZvBCl9or8vjL0WQTOKTiBa8spDcQ0=",
         "owner": "Rellikeht",
         "repo": "nix-builds",
-        "rev": "f3cf02913036e6f8d760d5657992faa36b59d27c",
+        "rev": "4fdf4713b06e4764607e4314371e9b1c14228bae",
         "type": "github"
       },
       "original": {
@@ -760,14 +760,14 @@
     "pkg-linux-x64": {
       "flake": false,
       "locked": {
-        "lastModified": 1727858166,
-        "narHash": "sha256-QjI/S9KrAQq9ilYFCPEu0xdwlG1VjYHs1mXn5bcWNQs=",
+        "lastModified": 1740960457,
+        "narHash": "sha256-DaTYX9vb6/w3+2L3xI8Dpwu/+nS8XA9KrXPHDi53Y0M=",
         "type": "tarball",
-        "url": "https://github.com/MiniZinc/MiniZincIDE/releases/download/2.8.7/MiniZincIDE-2.8.7-bundle-linux-x86_64.tgz"
+        "url": "https://github.com/MiniZinc/MiniZincIDE/releases/download/2.9.1/MiniZincIDE-2.9.1-bundle-linux-x86_64.tgz"
       },
       "original": {
         "type": "tarball",
-        "url": "https://github.com/MiniZinc/MiniZincIDE/releases/download/2.8.7/MiniZincIDE-2.8.7-bundle-linux-x86_64.tgz"
+        "url": "https://github.com/MiniZinc/MiniZincIDE/releases/download/2.9.1/MiniZincIDE-2.9.1-bundle-linux-x86_64.tgz"
       }
     },
     "pkg-linux-x64_2": {
@@ -802,11 +802,11 @@
       },
       "locked": {
         "dir": "playit",
-        "lastModified": 1741023537,
-        "narHash": "sha256-D7V4UOfwpot+oRDCwH05F8QD8h2dP+2bp7AiwgkOkQA=",
+        "lastModified": 1741023608,
+        "narHash": "sha256-neawmEn9meYuVeZvBCl9or8vjL0WQTOKTiBa8spDcQ0=",
         "owner": "Rellikeht",
         "repo": "nix-builds",
-        "rev": "f3cf02913036e6f8d760d5657992faa36b59d27c",
+        "rev": "4fdf4713b06e4764607e4314371e9b1c14228bae",
         "type": "github"
       },
       "original": {
@@ -827,11 +827,11 @@
       },
       "locked": {
         "dir": "playit-bin",
-        "lastModified": 1741023537,
-        "narHash": "sha256-D7V4UOfwpot+oRDCwH05F8QD8h2dP+2bp7AiwgkOkQA=",
+        "lastModified": 1741023608,
+        "narHash": "sha256-neawmEn9meYuVeZvBCl9or8vjL0WQTOKTiBa8spDcQ0=",
         "owner": "Rellikeht",
         "repo": "nix-builds",
-        "rev": "f3cf02913036e6f8d760d5657992faa36b59d27c",
+        "rev": "4fdf4713b06e4764607e4314371e9b1c14228bae",
         "type": "github"
       },
       "original": {
@@ -868,11 +868,11 @@
       },
       "locked": {
         "dir": "scheme-langserver-bin",
-        "lastModified": 1741023537,
-        "narHash": "sha256-D7V4UOfwpot+oRDCwH05F8QD8h2dP+2bp7AiwgkOkQA=",
+        "lastModified": 1741023608,
+        "narHash": "sha256-neawmEn9meYuVeZvBCl9or8vjL0WQTOKTiBa8spDcQ0=",
         "owner": "Rellikeht",
         "repo": "nix-builds",
-        "rev": "f3cf02913036e6f8d760d5657992faa36b59d27c",
+        "rev": "4fdf4713b06e4764607e4314371e9b1c14228bae",
         "type": "github"
       },
       "original": {
@@ -1206,11 +1206,11 @@
       },
       "locked": {
         "dir": "xinit-xsession",
-        "lastModified": 1741023537,
-        "narHash": "sha256-D7V4UOfwpot+oRDCwH05F8QD8h2dP+2bp7AiwgkOkQA=",
+        "lastModified": 1741023608,
+        "narHash": "sha256-neawmEn9meYuVeZvBCl9or8vjL0WQTOKTiBa8spDcQ0=",
         "owner": "Rellikeht",
         "repo": "nix-builds",
-        "rev": "f3cf02913036e6f8d760d5657992faa36b59d27c",
+        "rev": "4fdf4713b06e4764607e4314371e9b1c14228bae",
         "type": "github"
       },
       "original": {
