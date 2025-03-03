@@ -19,8 +19,6 @@
 
     scheme-langserver-bin.url = "github:Rellikeht/nix-builds?dir=scheme-langserver-bin";
     minizinc-ide-bin.url = "github:Rellikeht/nix-builds?dir=minizinc-ide-bin";
-
-    breeze-hacked.url = "github:Rellikeht/nix-builds?dir=breeze-hacked";
     xinit-xsession.url = "github:Rellikeht/nix-builds?dir=xinit-xsession";
 
     pico-sdk.url = "github:Rellikeht/nix-builds?dir=pico-sdk";
@@ -45,7 +43,6 @@
     playit-bin,
     scheme-langserver-bin,
     minizinc-ide-bin,
-    breeze-hacked,
     xinit-xsession,
     pico-sdk,
     # pico-examples,
@@ -77,7 +74,6 @@
 
         playit-bin = getDef playit-bin;
 
-        breeze-hacked = getDef breeze-hacked;
         xinit-xsession = getDef xinit-xsession;
 
         pico-sdk = getDef pico-sdk;

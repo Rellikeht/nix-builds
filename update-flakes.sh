@@ -4,7 +4,7 @@ git pull || exit 1
 
 # hardcoded shit because I can't reliably
 # parse that from flake.nix
-for dir in breeze-hacked \
+for dir in \
     chuffed \
     minizinc \
     minizinc-ide-bin \

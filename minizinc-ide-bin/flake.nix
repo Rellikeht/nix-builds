@@ -6,7 +6,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs";
     flakeUtils.url = "github:numtide/flake-utils";
     pkg-linux-x64 = {
-      url = "https://github.com/MiniZinc/MiniZincIDE/releases/download/2.8.7/MiniZincIDE-2.8.7-bundle-linux-x86_64.tgz";
+      url = "https://github.com/MiniZinc/MiniZincIDE/releases/download/2.9.1/MiniZincIDE-2.9.1-bundle-linux-x86_64.tgz";
       flake = false;
     };
   };
@@ -23,7 +23,7 @@
     flib.eachSystem systems (system: let
       pkgs = nixpkgs.legacyPackages.${system};
       lib = pkgs.lib;
-      name = "minizinc-ide-bin-2.8.7";
+      name = "minizinc-ide-bin-2.9.1";
       src = pkg-linux-x64;
     in {
       packages = {
@@ -41,6 +41,10 @@
             zlib
             e2fsprogs
             gmpxx
+
+            abseil-cpp
+            re2
+            protobuf
           ];
 
           nativeBuildInputs = with pkgs; [
@@ -69,7 +73,7 @@
           meta = with lib; {
             homepage = "https://www.minizinc.org/ide/";
             description = "Binary build of minizinc ide with solvers built in";
-            license = licenses.mpl2;
+            license = licenses.mpl20;
             mainProgram = "minizinc";
             maintainers = ["Rellikeht"];
             platforms = platforms.linux;
