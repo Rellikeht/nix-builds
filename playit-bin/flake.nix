@@ -2,7 +2,7 @@
   description = "Binary build of playit client";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     flakeUtils.url = "github:numtide/flake-utils";
 
     # Shit is statically linked

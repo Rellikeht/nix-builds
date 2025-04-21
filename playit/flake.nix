@@ -2,10 +2,10 @@
   description = "playit.gg client";
 
   inputs = {
-    nixpkgs.url = github:NixOS/nixpkgs;
-    flakeUtils.url = github:numtide/flake-utils;
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    flakeUtils.url = "github:numtide/flake-utils";
     package = {
-      url = github:playit-cloud/playit-agent;
+      url = "github:playit-cloud/playit-agent";
       flake = false;
     };
   };

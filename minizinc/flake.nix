@@ -2,17 +2,17 @@
   description = "Simple flake for building libminizinc";
 
   inputs = {
-    nixpkgs.url = github:NixOS/nixpkgs;
-    flakeUtils.url = github:numtide/flake-utils;
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    flakeUtils.url = "github:numtide/flake-utils";
     package = {
-      url = github:MiniZinc/libminizinc;
+      url = "github:MiniZinc/libminizinc";
       flake = false;
     };
 
     # chuffed.url = "../chuffed";
     # chuffed.url = "github:Rellikeht/nix-builds#chuffed";
-    # deps.url = github:Rellikeht/nix-builds?dir=chuffed;
-    chuffed.url = github:Rellikeht/nix-builds?dir=chuffed;
+    # deps.url = "github:Rellikeht/nix-builds?dir=chuffed";
+    chuffed.url = "github:Rellikeht/nix-builds?dir=chuffed";
   };
 
   outputs = {

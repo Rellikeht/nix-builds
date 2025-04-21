@@ -4,7 +4,7 @@
   inputs = {
     # {{{
     flakeUtils.url = "github:numtide/flake-utils";
-    nixpkgs.url = "github:NixOS/nixpkgs";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
 
     dwm.url = "github:Rellikeht/dwm";
     st.url = "github:Rellikeht/st";

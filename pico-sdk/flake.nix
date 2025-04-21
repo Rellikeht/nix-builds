@@ -4,7 +4,7 @@
   inputs = {
     # {{{
     nixpkgs = {
-      url = "github:NixOS/nixpkgs";
+      url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     };
 
     flake-utils = {

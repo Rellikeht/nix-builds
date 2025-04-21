@@ -2,10 +2,10 @@
   description = "Github release of scheme langserver";
 
   inputs = {
-    nixpkgs.url = github:NixOS/nixpkgs;
-    flakeUtils.url = github:numtide/flake-utils;
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    flakeUtils.url = "github:numtide/flake-utils";
     package = {
-      url = "https://github.com/ufo5260987423/scheme-langserver/releases/download/1.1.1/run";
+      url = "https://github.com/ufo5260987423/scheme-langserver/releases/download/1.2.9/run";
       type = "file";
       flake = false;
     };

@@ -2,10 +2,10 @@
   description = "Simple flake for building chuffed";
 
   inputs = {
-    nixpkgs.url = github:NixOS/nixpkgs;
-    flakeUtils.url = github:numtide/flake-utils;
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    flakeUtils.url = "github:numtide/flake-utils";
     package = {
-      url = github:chuffed/chuffed;
+      url = "github:chuffed/chuffed";
       flake = false;
     };
   };
