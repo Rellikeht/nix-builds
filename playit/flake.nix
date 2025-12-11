@@ -69,7 +69,6 @@
             mainProgram = "playit";
             maintainers = ["Rellikeht"];
             platforms = platforms.linux;
-
             longDescription = '''';
           };
         };

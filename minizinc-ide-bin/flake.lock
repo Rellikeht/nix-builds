@@ -37,14 +37,14 @@
     "pkg-linux-x64": {
       "flake": false,
       "locked": {
-        "lastModified": 1741244042,
-        "narHash": "sha256-4446yBAlbXsE7gFFdfZhiqr+2zlnYKsDc0jZ0pPA87g=",
+        "lastModified": 1759107394,
+        "narHash": "sha256-WjhDYhHeR7SEaY32AGXsLL2lt84VAiS3bwVZaFYHPvM=",
         "type": "tarball",
-        "url": "https://github.com/MiniZinc/MiniZincIDE/releases/download/2.9.2/MiniZincIDE-2.9.2-bundle-linux-x86_64.tgz"
+        "url": "https://github.com/MiniZinc/MiniZincIDE/releases/download/2.9.4/MiniZincIDE-2.9.4-bundle-linux-x86_64.tgz"
       },
       "original": {
         "type": "tarball",
-        "url": "https://github.com/MiniZinc/MiniZincIDE/releases/download/2.9.2/MiniZincIDE-2.9.2-bundle-linux-x86_64.tgz"
+        "url": "https://github.com/MiniZinc/MiniZincIDE/releases/download/2.9.4/MiniZincIDE-2.9.4-bundle-linux-x86_64.tgz"
       }
     },
     "root": {

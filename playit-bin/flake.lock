@@ -37,49 +37,49 @@
     "pkg-linux-a32": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-7zPc5Uq+2aID88Ea4DPXGGtOqSHFqDnJdv/oublI/FQ=",
+        "narHash": "sha256-O9PybAn7OZJVNLVt2PEOBcEUPCs1xqL+K2WGzYcbaVw=",
         "type": "file",
-        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.26/playit-linux-armv7"
+        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.16.5/playit-linux-armv7"
       },
       "original": {
         "type": "file",
-        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.26/playit-linux-armv7"
+        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.16.5/playit-linux-armv7"
       }
     },
     "pkg-linux-a64": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-SYJ1eOU/clsmn66vrH8rMf8vRDMuwOVj0+hnvzZ+8A8=",
+        "narHash": "sha256-LYdsviwSPl6rTk2c9sb5xEvpFe4MheTRmNRHJ819yi0=",
         "type": "file",
-        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.26/playit-linux-aarch64"
+        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.16.5/playit-linux-aarch64"
       },
       "original": {
         "type": "file",
-        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.26/playit-linux-aarch64"
+        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.16.5/playit-linux-aarch64"
       }
     },
     "pkg-linux-x64": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-NMxyP1KPNtkVbN83PRrpi3PAKdoysdM5imycxurLJSo=",
+        "narHash": "sha256-M73twICR1RUQCsdUEe6pQv0oVIQnvnlXufGROtRl6Cw=",
         "type": "file",
-        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.26/playit-linux-amd64"
+        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.16.5/playit-linux-amd64"
       },
       "original": {
         "type": "file",
-        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.26/playit-linux-amd64"
+        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.16.5/playit-linux-amd64"
       }
     },
     "pkg-linux-x86": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-7NR3zKfbwu5YlJ5H4U0AUZUqfG72Ha7HVrZQeSLVq3w=",
+        "narHash": "sha256-6lbNrOKxvqvgEw2lzwV7aAU+Tyiy2Uj7ZbWS/5/caWI=",
         "type": "file",
-        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.26/playit-linux-i686"
+        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.16.5/playit-linux-i686"
       },
       "original": {
         "type": "file",
-        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.15.26/playit-linux-i686"
+        "url": "https://github.com/playit-cloud/playit-agent/releases/download/v0.16.5/playit-linux-i686"
       }
     },
     "root": {
