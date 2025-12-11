@@ -16,6 +16,7 @@
     minizinc.url = "github:Rellikeht/nix-builds?dir=minizinc";
     playit.url = "github:Rellikeht/nix-builds?dir=playit";
     playit-bin.url = "github:Rellikeht/nix-builds?dir=playit-bin";
+    hq.url = "github:Rellikeht/nix-builds?dir=hq";
 
     scheme-langserver-bin.url = "github:Rellikeht/nix-builds?dir=scheme-langserver-bin";
     minizinc-ide-bin.url = "github:Rellikeht/nix-builds?dir=minizinc-ide-bin";
@@ -41,6 +42,7 @@
     minizinc,
     playit,
     playit-bin,
+    hq,
     scheme-langserver-bin,
     minizinc-ide-bin,
     xinit-xsession,
@@ -73,6 +75,7 @@
         playit = getDef playit;
 
         playit-bin = getDef playit-bin;
+        hq = getDef hq;
 
         xinit-xsession = getDef xinit-xsession;
 
