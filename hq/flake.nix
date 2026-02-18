@@ -5,8 +5,8 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     flakeUtils.url = "github:numtide/flake-utils";
     hq = {
-        url = "github:MultisampledNight/hq";
-        flake = false;
+      url = "github:MultisampledNight/hq";
+      flake = false;
     };
   };
 
@@ -16,7 +16,6 @@
     flakeUtils,
     hq,
   }: let
-    b = builtins;
     flib = flakeUtils.lib;
   in
     flib.eachSystem flib.allSystems (system: let
