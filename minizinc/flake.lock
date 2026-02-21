@@ -8,11 +8,11 @@
       },
       "locked": {
         "dir": "chuffed",
-        "lastModified": 1771672592,
-        "narHash": "sha256-u7M+nsplbIUzRur4O6VBTZ5V0ZFBxRS5FaRkgnO4JXs=",
+        "lastModified": 1771686562,
+        "narHash": "sha256-oYgnowo6e0on+ygkZuqSIw1WvOFzhzvNygrLKtCItxQ=",
         "owner": "Rellikeht",
         "repo": "nix-builds",
-        "rev": "f9c23e4f57a4b396bf84d8b7757e563eb70f6a70",
+        "rev": "31f31b7516602ac119acb51cb613637e39b7f055",
         "type": "github"
       },
       "original": {
