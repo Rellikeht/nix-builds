@@ -22,7 +22,6 @@
     minizinc-ide-bin.url = "github:Rellikeht/nix-builds?dir=minizinc-ide-bin";
     xinit-xsession.url = "github:Rellikeht/nix-builds?dir=xinit-xsession";
 
-    pico-sdk.url = "github:Rellikeht/nix-builds?dir=pico-sdk";
     # pico-examples.url = "github:Rellikeht/nix-builds?dir=pico-examples";
 
     #
@@ -46,7 +45,6 @@
     scheme-langserver-bin,
     minizinc-ide-bin,
     xinit-xsession,
-    pico-sdk,
     # pico-examples,
   }:
   # }}}
@@ -79,7 +77,6 @@
 
         xinit-xsession = getDef xinit-xsession;
 
-        pico-sdk = getDef pico-sdk;
         # pico-examples = getDef pico-examples;
       }; # }}}
     });

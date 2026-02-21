@@ -14,7 +14,6 @@ for dir in \
     chuffed \
     minizinc \
     minizinc-ide-bin \
-    pico-sdk \
     playit \
     playit-bin \
     scheme-langserver-bin \
