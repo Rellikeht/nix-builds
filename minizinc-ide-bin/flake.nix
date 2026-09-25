@@ -5,7 +5,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     flakeUtils.url = "github:numtide/flake-utils";
     pkg-linux-x64 = {
-      url = "https://github.com/MiniZinc/MiniZincIDE/releases/download/2.9.4/MiniZincIDE-2.9.4-bundle-linux-x86_64.tgz";
+      url = "https://github.com/MiniZinc/MiniZincIDE/releases/download/2.10.1/MiniZincIDE-2.10.1-x86_64-linux-gnu.tgz";
       flake = false;
     };
   };
@@ -23,7 +23,7 @@
       pkgs = nixpkgs.legacyPackages.${system};
       lib = pkgs.lib;
       pname = "minizinc-ide-bin";
-      version = "2.9.4";
+      version = "2.10.1";
       src = pkg-linux-x64;
     in {
       packages = {

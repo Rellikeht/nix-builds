@@ -8,25 +8,25 @@
     # statically linked
     # sadly needs so much inputs
     pkg-linux-x64 = {
-      url = "https://github.com/playit-cloud/playit-agent/releases/download/v0.16.5/playit-linux-amd64";
+      url = "https://github.com/playit-cloud/playit-agent/releases/download/v1.0.10/playit-linux-amd64";
       type = "file";
       flake = false;
     };
 
     pkg-linux-x86 = {
-      url = "https://github.com/playit-cloud/playit-agent/releases/download/v0.16.5/playit-linux-i686";
+      url = "https://github.com/playit-cloud/playit-agent/releases/download/v1.0.10/playit-linux-i686";
       type = "file";
       flake = false;
     };
 
     pkg-linux-a64 = {
-      url = "https://github.com/playit-cloud/playit-agent/releases/download/v0.16.5/playit-linux-aarch64";
+      url = "https://github.com/playit-cloud/playit-agent/releases/download/v1.0.10/playit-linux-aarch64";
       type = "file";
       flake = false;
     };
 
     pkg-linux-a32 = {
-      url = "https://github.com/playit-cloud/playit-agent/releases/download/v0.16.5/playit-linux-armv7";
+      url = "https://github.com/playit-cloud/playit-agent/releases/download/v1.0.10/playit-linux-armv7";
       type = "file";
       flake = false;
     };
@@ -55,7 +55,7 @@
       pkgs = nixpkgs.legacyPackages.${system};
       lib = pkgs.lib;
       pname = "playit-bin";
-      version = "0.16.5";
+      version = "1.0.10";
       src = systems.${system};
       mainProgram = "playit";
     in {
