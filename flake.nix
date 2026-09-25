@@ -13,7 +13,7 @@
     svim.url = "github:Rellikeht/svim-comptools";
 
     chuffed.url = "github:Rellikeht/nix-builds?dir=chuffed";
-    minizinc.url = "github:Rellikeht/nix-builds?dir=minizinc";
+    # minizinc.url = "github:Rellikeht/nix-builds?dir=minizinc";
     playit.url = "github:Rellikeht/nix-builds?dir=playit";
     playit-bin.url = "github:Rellikeht/nix-builds?dir=playit-bin";
     hq.url = "github:Rellikeht/nix-builds?dir=hq";
@@ -38,7 +38,7 @@
     dmenu,
     svim,
     chuffed,
-    minizinc,
+    # minizinc,
     playit,
     playit-bin,
     hq,
@@ -69,7 +69,7 @@
         svim = getDef svim;
 
         chuffed = getDef chuffed;
-        minizinc = getDef minizinc;
+        # minizinc = getDef minizinc;
         playit = getDef playit;
 
         playit-bin = getDef playit-bin;

@@ -13,12 +13,14 @@ git pull
 # parse that from flake.nix
 for dir in \
     chuffed \
-    minizinc \
     minizinc-ide-bin \
     playit \
     playit-bin \
     scheme-langserver-bin \
-    xinit-xsession; do
+    xinit-xsession
+do
+    # minizinc \
+
     cd "$dir" || exit 1
     nix flake update || exit 1
     git add flake.lock
